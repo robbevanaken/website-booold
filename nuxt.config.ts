@@ -6,10 +6,11 @@ export default defineNuxtConfig({
   css: ['@@/assets/css/main.css'],
 
   modules: [
-    '@nuxt/content',
+    // '@nuxt/content', // Temporarily disabled due to Node version compatibility
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxt/scripts'
+    '@nuxt/scripts',
+    '@nuxtjs/tailwindcss'
   ]
 })

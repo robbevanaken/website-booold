@@ -1,7 +1,9 @@
 <template>
-  <header class="header">
-    <img :src="logoUrl" alt="Logo" class="logo" />
-    <slot />
+  <header class="c-header">
+    <img :src="logoUrl" alt="Logo" class="c-header__logo" />
+    <div class="flex space-x-4">
+      <slot />
+    </div>
   </header>
 </template>
 

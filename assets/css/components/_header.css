@@ -1,0 +1,4 @@
+.c-header {
+    @apply py-7;
+    @apply flex items-center justify-center;
+}

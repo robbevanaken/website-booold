@@ -1,1 +1,6 @@
+@import "./base" layer(base);
 @import "./components" layer(components);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
