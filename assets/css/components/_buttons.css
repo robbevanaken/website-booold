@@ -4,10 +4,55 @@
     @apply py-[0.8125rem] px-5;
     @apply bg-white;
     @apply flex items-center gap-2.5;
+    @apply relative overflow-hidden;
+    @apply cursor-pointer;
+}
+
+.btn__content {
+    @apply relative z-10;
+}
+
+.btn__bg {
+    @apply absolute inset-0;
+    @apply bg-blue opacity-0;
+    @apply transition-opacity duration-300;
+    @apply pointer-events-none;
+}
+
+.c-btn-menu:hover .btn__bg {
+    @apply opacity-100;
+}
+
+.btn__circle-wrap {
+    @apply absolute inset-0;
+    @apply overflow-hidden pointer-events-none;
+}
+
+.btn__circle {
+    @apply absolute;
+    @apply aspect-square;
+    @apply -translate-x-1/2 -translate-y-1/2;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 0;
+}
+
+.before__100 {
+    @apply absolute inset-0;
+    @apply bg-blue rounded-full;
+    @apply scale-0;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.c-btn-menu:hover .before__100 {
+    @apply scale-100;
+}
+
+.c-btn-menu:hover {
+    @apply text-white;
 }
 
 .c-btn-menu__icon {
-    @apply relative;
+    @apply relative z-10;
     @apply flex gap-1;
     @apply w-3 h-1;
 }
@@ -25,6 +70,10 @@
 
 .c-btn-menu__icon span:last-of-type {
     @apply right-0;
+}
+
+.c-btn-menu:hover .c-btn-menu__icon span {
+    @apply bg-white;
 }
 
 .c-btn-menu:hover .c-btn-menu__icon span:first-of-type {
