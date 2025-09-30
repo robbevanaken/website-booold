@@ -1,0 +1,36 @@
+/* Menu Button */
+.c-btn-menu {
+    @apply font-mono uppercase text-[0.875rem] font-medium text-blue;
+    @apply py-[0.8125rem] px-5;
+    @apply bg-white;
+    @apply flex items-center gap-2.5;
+}
+
+.c-btn-menu__icon {
+    @apply relative;
+    @apply flex gap-1;
+    @apply w-3 h-1;
+}
+
+.c-btn-menu__icon span {
+    @apply w-1 h-1 bg-blue;
+    @apply absolute top-0;
+    @apply rounded-full;
+    transition: all 0.4s cubic-bezier(0.34, 0.8, 0.64, 1);
+}
+
+.c-btn-menu__icon span:first-of-type {
+    @apply left-0;
+}
+
+.c-btn-menu__icon span:last-of-type {
+    @apply right-0;
+}
+
+.c-btn-menu:hover .c-btn-menu__icon span:first-of-type {
+    @apply left-1;
+}
+
+.c-btn-menu:hover .c-btn-menu__icon span:last-of-type {
+    @apply right-1;
+}

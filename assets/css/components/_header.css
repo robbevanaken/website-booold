@@ -1,4 +1,12 @@
 .c-header {
     @apply py-7;
-    @apply flex items-center justify-center;
+}
+
+.c-header__body {
+    @apply flex items-center justify-between;
+}
+
+.c-header__title {
+    @apply flex flex-col;
+    @apply font-aspekta text-[1.25rem] leading-[2.125rem] text-white;
 }

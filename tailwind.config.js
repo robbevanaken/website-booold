@@ -13,6 +13,10 @@ module.exports = {
         blue: '#1C1341',
         white: '#F7F3FA',
       },
+      fontFamily: {
+        'aspekta': ['Aspekta', 'sans-serif'],
+        'mono': ['Roboto Mono', 'monospace'],
+      },
       spacing: {
         '18': '4.5rem', // 72px
       },
