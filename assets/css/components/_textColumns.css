@@ -1,0 +1,12 @@
+.c-text-columns {
+    @apply py-20 md:py-[15vw];
+}
+
+.c-text-columns__title {
+    @apply text-xl font-aspekta font-normal text-blue;
+    @apply mt-4 md:mt-8;
+}
+
+.c-text-columns__text {
+    @apply text-lg text-blue font-normal;
+} 

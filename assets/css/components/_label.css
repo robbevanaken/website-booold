@@ -1,0 +1,33 @@
+.c-label {
+    @apply inline-flex items-center justify-center;
+    @apply px-[0.875rem] py-1;
+    @apply w-fit;
+}
+
+.c-label__text {
+    @apply font-mono text-xs text-blue font-bold;
+    @apply uppercase;
+}
+
+/* Theme dark */
+.c-label--dark {
+    @apply border border-blue;
+}
+
+.c-label--dark .c-label__text {
+    @apply text-blue;
+}
+
+/* Theme light */
+.c-label--light {
+    @apply border border-white;
+}
+
+.c-label--light .c-label__text {
+    @apply text-white;
+}
+
+/* Theme borderless */
+.c-label--borderless .c-label__text {
+    @apply text-blue;
+}

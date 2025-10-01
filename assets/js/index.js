@@ -1,0 +1,1 @@
+export { initHighlightText } from './animations/textAnimations.js';

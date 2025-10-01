@@ -10,11 +10,11 @@
             <div class="c-hero-home__content">
                 <div class="c-hero-home__content-top">
                     <div class="c-hero-home__text">
-                        <p>
+                        <h1>
                             Hi! I’m Robbe A Booold Designer
                             <br>
                             And a Solid Web developer
-                        </p>
+                        </h1>
                     </div>
                 </div>
                 <div class="c-hero-home__content-middle">

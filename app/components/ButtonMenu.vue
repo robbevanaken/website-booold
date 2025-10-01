@@ -7,9 +7,7 @@
             </div>
         </div>
         <span class="c-btn-menu__content">
-            <slot name="button">
-                {{ buttonText }}
-            </slot>
+            {{ buttonText }}
         </span>
         <div class="c-btn-menu__icon">
             <span></span>

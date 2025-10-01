@@ -22,7 +22,10 @@ module.exports = {
         'mono': ['Roboto Mono', 'monospace'],
       },
       fontSize: {
+        "xs": ["clamp(10px, 1vw, 12px)", 1],
         "base": ["clamp(14px, 1.5vw, 20px)", 1.5],
+        "lg": ["clamp(18px, 2vw, 32px)", 1.7],
+        "xl": ["clamp(28px, 3vw, 56px)", 1.5],
         },
       spacing: {
         '18': '4.5rem', // 72px
