@@ -21,6 +21,9 @@ module.exports = {
         'aspekta': ['Aspekta', 'sans-serif'],
         'mono': ['Roboto Mono', 'monospace'],
       },
+      fontSize: {
+        "base": ["clamp(14px, 1.5vw, 20px)", 1.5],
+        },
       spacing: {
         '18': '4.5rem', // 72px
       },

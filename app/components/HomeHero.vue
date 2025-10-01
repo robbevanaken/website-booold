@@ -8,7 +8,15 @@
         </div>
         <div class="o-container">
             <div class="c-hero-home__content">
-                <div class="c-hero-home__content-top"></div>
+                <div class="c-hero-home__content-top">
+                    <div class="c-hero-home__text">
+                        <p>
+                            Hi! I’m Robbe A Booold Designer
+                            <br>
+                            And a Solid Web developer
+                        </p>
+                    </div>
+                </div>
                 <div class="c-hero-home__content-middle">
                     <LogoWhite></LogoWhite>
                 </div>
@@ -18,9 +26,11 @@
                         (Scroll Down)
                     </div>
                     <div class="c-hero-home__text text-right">
-                        Enjoy This Month’s Playlist
-                        <br>
-                        While Browsing
+                        <p>
+                            Enjoy This Month’s Playlist
+                            <br>
+                            While Browsing
+                        </p>
                     </div>
                 </div>
             </div>
