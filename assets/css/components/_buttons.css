@@ -8,27 +8,27 @@
     @apply cursor-pointer;
 }
 
-.btn__content {
+.c-btn-menu__content {
     @apply relative z-10;
 }
 
-.btn__bg {
+.c-btn-menu__bg {
     @apply absolute inset-0;
-    @apply bg-blue opacity-0;
+    @apply bg-red opacity-0;
     @apply transition-opacity duration-300;
     @apply pointer-events-none;
 }
 
-.c-btn-menu:hover .btn__bg {
+.c-btn-menu:hover .c-btn-menu__bg {
     @apply opacity-100;
 }
 
-.btn__circle-wrap {
+.c-btn-menu__circle-wrap {
     @apply absolute inset-0;
     @apply overflow-hidden pointer-events-none;
 }
 
-.btn__circle {
+.c-btn-menu__circle {
     @apply absolute;
     @apply aspect-square;
     @apply -translate-x-1/2 -translate-y-1/2;
@@ -36,14 +36,14 @@
     width: 0;
 }
 
-.before__100 {
+.c-btn-menu__before {
     @apply absolute inset-0;
-    @apply bg-blue rounded-full;
+    @apply bg-red rounded-full;
     @apply scale-0;
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.c-btn-menu:hover .before__100 {
+.c-btn-menu:hover .c-btn-menu__before {
     @apply scale-100;
 }
 

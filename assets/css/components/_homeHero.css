@@ -1,0 +1,42 @@
+.c-hero-home {
+    @apply relative;
+}
+
+.c-hero-home__media {
+    @apply absolute inset-0 w-full h-full;
+    z-index: -1;
+}
+
+.c-hero-home__media video {
+    @apply w-full h-full object-cover;
+}
+
+.c-hero-home__text {
+    @apply flex flex-col;
+    @apply font-aspekta text-[1.25rem] leading-[2.125rem] text-white;
+}
+
+.c-hero-home__content {
+    @apply relative;
+    @apply min-h-screen;
+    @apply flex flex-col items-center justify-between;
+}
+
+.c-hero-home__content-middle {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply w-full;
+}
+
+.c-hero-home__content-middle svg {
+    @apply w-full h-auto;
+}
+
+.c-hero-home__content-bottom {
+    @apply w-full flex items-end justify-between;
+    @apply py-5;
+}
+
+.c-hero-home__scrolldown {
+    @apply font-mono text-sm text-white;
+    @apply absolute bottom-5 left-1/2 -translate-x-1/2;
+}

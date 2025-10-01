@@ -19,3 +19,7 @@
 body {
     @apply bg-white;
 }
+
+*::selection {
+    @apply bg-blue text-white;
+}

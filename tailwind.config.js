@@ -12,6 +12,10 @@ module.exports = {
       colors: {
         blue: '#1C1341',
         white: '#F7F3FA',
+        pink: '#FF006E',
+        orange: '#FB5607',
+        brown: '#370617',
+        red: '#FE4A49'
       },
       fontFamily: {
         'aspekta': ['Aspekta', 'sans-serif'],

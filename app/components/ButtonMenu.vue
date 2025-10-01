@@ -1,12 +1,12 @@
 <template>
     <button class="c-btn-menu" data-btn-hover>
-        <div class="btn__bg"></div>
-        <div class="btn__circle-wrap">
-            <div class="btn__circle">
-                <div class="before__100"></div>
+        <div class="c-btn-menu__bg"></div>
+        <div class="c-btn-menu__circle-wrap">
+            <div class="c-btn-menu__circle">
+                <div class="c-btn-menu__before"></div>
             </div>
         </div>
-        <span class="btn__content">
+        <span class="c-btn-menu__content">
             <slot name="button">
                 {{ buttonText }}
             </slot>
@@ -70,7 +70,7 @@ function initDirectionalButtonHover() {
         let offsetXFromCenter = ((mouseX - buttonCenterX) / (buttonWidth / 2)) * 50;
         offsetXFromCenter = Math.abs(offsetXFromCenter);
 
-        const circle = button.querySelector('.btn__circle');
+        const circle = button.querySelector('.c-btn-menu__circle');
         if (circle) {
             circle.style.left = `${offsetXFromLeft.toFixed(1)}%`;
             circle.style.top = `${offsetYFromTop.toFixed(1)}%`;

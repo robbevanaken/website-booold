@@ -5,6 +5,10 @@ export default defineNuxtConfig({
 
   css: ['@@/assets/css/main.css'],
 
+  devServer: {
+    port: 3001
+  },
+
   modules: [
     // '@nuxt/content', // Temporarily disabled due to Node version compatibility
     '@nuxt/eslint',
