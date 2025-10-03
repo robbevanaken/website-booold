@@ -13,10 +13,11 @@
 
 .c-case-panel__labels {
     @apply flex items-center gap-2.5;
+    @apply z-[1];
 }
 
 .c-case-panel__media {
-    @apply absolute top-6 bottom-6 right-6 w-[50%];
+    @apply absolute top-0 bottom-0 right-0 left-0 z-0;
     @apply rounded-r-lg;
     @apply overflow-hidden;
 }
@@ -27,6 +28,7 @@
 
 .c-case-panel__title {
     @apply text-white text-xl;
+    @apply z-[1];
 }
 
 .c-case-panel__floormat-counter {

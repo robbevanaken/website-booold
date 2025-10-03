@@ -17,6 +17,8 @@
       :cases="cases"
     ></CasePanels>
   </main>
+  
+  <SiteFooter></SiteFooter>
 </template>
 
 <script setup>

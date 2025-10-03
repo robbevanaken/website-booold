@@ -65,7 +65,7 @@ onMounted(() => {
                     filter: "blur(0px) saturate(100%)",
                     scale: 1
                 },{ 
-                    yPercent: 50, 
+                    yPercent: 10, 
                     filter: "blur(3px) saturate(150%)",
                     scale: 0.97,
                 })
