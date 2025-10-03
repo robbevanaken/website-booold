@@ -1,8 +1,5 @@
 <template>
     <div data-stacking-cards-item class="c-case-panel" :class="classes">
-        <div v-if="imageUrl" class="c-case-panel__media">
-            <img :src="imageUrl"class="stacking-cards__item-img" alt="">
-        </div>
         <div class="c-case-panel__header">
             <div class="c-case-panel__labels">
                 <Label v-for="label in labels"
@@ -11,6 +8,9 @@
                 ></Label>
             </div>
             <span class="c-case-panel__floormat-counter">{{ String(index + 1).padStart(2, '0') }} / {{ String(total).padStart(2, '0') }}</span>
+        </div>
+        <div v-if="imageUrl" class="c-case-panel__media">
+            <img :src="imageUrl"class="stacking-cards__item-img" alt="">
         </div>
         <h1 class="c-case-panel__title">{{ title }}</h1>
     </div>

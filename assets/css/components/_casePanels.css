@@ -1,0 +1,3 @@
+.c-case-panels {
+    @apply flex flex-col gap-10;
+}

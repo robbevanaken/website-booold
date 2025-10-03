@@ -1,7 +1,7 @@
 .c-case-panel {
     @apply relative;
-    @apply h-[75vh];
-    @apply flex flex-col justify-between;
+    @apply h-[50vh] min-h-[14rem];
+    @apply inline-flex flex-col justify-between gap-6;
     @apply bg-orange;
     @apply p-6;
     @apply rounded-xl overflow-clip;
@@ -16,7 +16,9 @@
 }
 
 .c-case-panel__media {
-    @apply absolute inset-0 z-[-1];
+    @apply absolute top-6 bottom-6 right-6 w-[50%];
+    @apply rounded-r-lg;
+    @apply overflow-hidden;
 }
 
 .c-case-panel__media img {

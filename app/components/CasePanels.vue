@@ -26,7 +26,7 @@ const props = defineProps({
     },
 });
 
-const bgClasses = ['bg-orange', 'bg-red', 'bg-blue']
+const bgClasses = ['bg-blue', 'bg-blue', 'bg-blue']
 
 onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -53,15 +53,22 @@ onMounted(() => {
                     },
                     scrollTrigger: {
                         trigger: card,
-                        start: "top 75%",
+                        start: "top 90%",
                         end: "top top",
                         scrub: true,
                         invalidateOnRefresh: true,
                     }
                 })
                 
-                tl.fromTo(previousCard,{ yPercent: 0 },{ yPercent: 50})
-                .fromTo(previousCard,{ scale: 1 },{ scale: 0.9})
+                tl.fromTo(previousCard,{ 
+                    yPercent: 0, 
+                    filter: "blur(0px) saturate(100%)",
+                    scale: 1
+                },{ 
+                    yPercent: 50, 
+                    filter: "blur(3px) saturate(150%)",
+                    scale: 0.97,
+                })
             });
         }
         
