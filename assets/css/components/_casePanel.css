@@ -1,0 +1,32 @@
+.c-case-panel {
+    @apply relative;
+    @apply h-[75vh];
+    @apply flex flex-col justify-between;
+    @apply bg-orange;
+    @apply p-6;
+    @apply rounded-xl overflow-clip;
+}
+
+.c-case-panel__header {
+    @apply flex items-center justify-between;
+}
+
+.c-case-panel__labels {
+    @apply flex items-center gap-2.5;
+}
+
+.c-case-panel__media {
+    @apply absolute inset-0 z-[-1];
+}
+
+.c-case-panel__media img {
+    @apply w-full h-full object-cover;
+}
+
+.c-case-panel__title {
+    @apply text-white text-xl;
+}
+
+.c-case-panel__floormat-counter {
+    @apply text-white text-sm font-mono;
+}

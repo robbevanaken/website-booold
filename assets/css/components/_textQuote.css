@@ -1,0 +1,7 @@
+.c-text-quote {
+    @apply py-20 md:py-[12vw];
+}
+
+.c-text-quote__text {
+    @apply text-lg text-blue font-normal mt-4;
+} 

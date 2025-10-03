@@ -28,6 +28,10 @@
 }
 
 /* Theme borderless */
+.c-label--borderless {
+    @apply bg-white;
+}
+
 .c-label--borderless .c-label__text {
     @apply text-blue;
 }
