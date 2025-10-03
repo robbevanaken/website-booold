@@ -1,6 +1,6 @@
 <template>
     <div data-stacking-cards-item class="c-case-panel" :class="classes">
-        <div class="c-case-panel__media">
+        <div v-if="imageUrl" class="c-case-panel__media">
             <img :src="imageUrl"class="stacking-cards__item-img" alt="">
         </div>
         <div class="c-case-panel__header">
@@ -25,7 +25,7 @@ const props = defineProps({
     },
     imageUrl: {
         type: String,
-        default: '#'
+        default: null,
     },
     title: {
         type: String,

@@ -2,7 +2,7 @@
   @apply relative;
   @apply py-5;
   @apply -rotate-3;
-  @apply mb-[20vw] md:mb-40;
+  @apply mb-[20vw] md:mb-60;
 }
 
 .c-logo-marquee__scroll {
@@ -15,7 +15,7 @@
 .c-logo-marquee__collection {
   @apply relative;
   @apply will-change-transform;
-  @apply flex;
+  @apply flex gap-4;
 }
 
 .c-logo-marquee__item {

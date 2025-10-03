@@ -1,5 +1,5 @@
 <template>
-    <div class="c-case-panels">
+    <div class="c-case-panels o-container">
         <CasePanel 
             v-for="(caseItem, index) in cases" 
             :key="caseItem.id"
@@ -31,10 +31,7 @@ const bgClasses = ['bg-orange', 'bg-red', 'bg-blue']
 onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
     
-    // Wait for Locomotive Scroll to be ready
     setTimeout(() => {
-        // Refresh ScrollTrigger to work with Locomotive Scroll
-        ScrollTrigger.refresh();
         
         function initStackingCardsParallax(){
             const cards = document.querySelectorAll("[data-stacking-cards-item]");
@@ -64,6 +61,7 @@ onMounted(() => {
                 })
                 
                 tl.fromTo(previousCard,{ yPercent: 0 },{ yPercent: 50})
+                .fromTo(previousCard,{ scale: 1 },{ scale: 0.9})
             });
         }
         

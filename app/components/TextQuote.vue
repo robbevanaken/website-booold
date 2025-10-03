@@ -18,7 +18,7 @@
 
 <script setup>
     import { onMounted } from "vue";
-    import { initHighlightText } from "../../assets/js/index.js";
+    import { initHighlightText } from "../../assets/js/animations/textAnimations.js";
 
     const props = defineProps({
         label: {
