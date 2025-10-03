@@ -1,5 +1,5 @@
 .c-text-quote {
-    @apply py-20 md:py-[12vw];
+    @apply py-20 md:py-[8vw];
 }
 
 .c-text-quote__text {

@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="c-hero-home__content-middle">
-                    <LogoWhite></LogoWhite>
+                    <LogoBooold></LogoBooold>
                 </div>
                 <div class="c-hero-home__content-bottom">
                     <div class="c-hero-home__playlist"></div>
