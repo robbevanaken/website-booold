@@ -23,7 +23,7 @@
 }
 
 .c-logo-marquee__item svg {
-  @apply w-[50vw] max-w-[44rem] h-auto;
+  @apply w-[50vw] h-auto;
 }
 
 /* Optional: Logo transformations based on Scroll Direction */
