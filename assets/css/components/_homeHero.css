@@ -8,6 +8,11 @@
     z-index: -1;
 }
 
+.c-hero-home__hover {
+    @apply absolute inset-0 w-full h-full;
+    @apply bg-brown;
+}
+
 .c-hero-home__media video {
     @apply w-full h-full object-cover;
 }
