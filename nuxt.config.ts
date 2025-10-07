@@ -11,6 +11,7 @@ export default defineNuxtConfig({
 
   modules: [
     // '@nuxt/content', // Temporarily disabled due to Node version compatibility
+    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',

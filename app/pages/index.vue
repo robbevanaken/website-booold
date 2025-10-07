@@ -5,60 +5,32 @@
     <HomeHero></HomeHero>
 
     <TextQuote
-      label="Hi there!"
-      labelClasses="c-label--dark"
-      title="Nice to meet ya!"
-      text="What's up! I'm Robbe. A web designer and pixel precise  developer. My job is to tailor the web to you' needs with my head and my heart. I combine strategic thinking with creative passion to build digital experiences that truly connect."
+      v-if="metaContent?.textQuote"
+      :label="metaContent.textQuote.label"
+      :labelClasses="metaContent.textQuote.labelClasses"
+      :title="metaContent.textQuote.title"
+      :text="metaContent.textQuote.text"
     ></TextQuote>
 
     <LogoMarquee></LogoMarquee>
 
     <CasePanels
-      :cases="cases"
+      v-if="metaContent?.cases"
+      :cases="metaContent.cases"
     ></CasePanels>
+
   </main>
   
   <SiteFooter></SiteFooter>
 </template>
 
 <script setup>
+  const { data: home } = await useAsyncData(() => queryCollection('content').path('/').first())
+  const metaContent = home.value.meta ?? null;
 
-let cases = [
-  {
-    'id': 1,
-    'url': '#',
-    'title': 'Ngis Wireless',
-    'imageUrl': 'https://images.pexels.com/photos/38519/macbook-laptop-ipad-apple-38519.jpeg',
-    'labels': [
-      'Wordpress',
-      'Website',
-      'Design',
-      'Development'
-    ]
-  },
-  {
-    'id': 2,
-    'url': '#',
-    'title': 'De Wilde - Braems',
-    'imageUrl': 'https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg',
-    'labels': [
-      'Wordpress',
-      'Website',
-      'Design',
-      'Development'
-    ]
-  },
-  {
-    'id': 3,
-    'url': '#',
-    'title': 'Alpenglow',
-    'imageUrl': 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
-    'labels': [
-      'Wordpress',
-      'Website',
-      'Design',
-      'Development'
-    ]
-  },
-]
+  useSeoMeta({
+    title: home.value?.title,
+    description: home.value?.description
+  })
+
 </script>
