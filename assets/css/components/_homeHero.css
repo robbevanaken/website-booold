@@ -1,5 +1,5 @@
 .c-hero-home {
-    @apply relative rounded-b-xl;
+    @apply relative;
     @apply overflow-hidden;
 }
 
@@ -45,10 +45,4 @@
 .c-hero-home__content-bottom {
     @apply w-full flex items-end justify-between;
     @apply py-5;
-}
-
-.c-hero-home__scrolldown {
-    @apply font-mono text-blue text-sm;
-    @apply absolute bottom-5 left-1/2 -translate-x-1/2;
-    @apply bg-white p-1;
 }

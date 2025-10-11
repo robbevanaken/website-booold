@@ -12,13 +12,7 @@
       :text="metaContent.textQuote.text"
     ></TextQuote>
 
-    <LogoMarquee></LogoMarquee>
-
-    <CasePanels
-      v-if="metaContent?.cases"
-      :cases="metaContent.cases"
-    ></CasePanels>
-
+    <ButtonDefault></ButtonDefault>
   </main>
   
   <SiteFooter></SiteFooter>

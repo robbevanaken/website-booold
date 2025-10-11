@@ -1,7 +1,7 @@
 <template>
     <div :class="'c-label ' + classes">
         <span class="c-label__text">
-            {{ text }}
+            ({{ text }})
         </span>
     </div>
 </template>

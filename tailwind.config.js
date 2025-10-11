@@ -20,7 +20,6 @@ module.exports = {
       },
       fontFamily: {
         'aspekta': ['Aspekta', 'sans-serif'],
-        'mono': ['Roboto Mono', 'monospace'],
       },
       fontSize: {
         "xs": ["clamp(10px, 1vw, 12px)", 1],

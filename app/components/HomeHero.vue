@@ -3,31 +3,7 @@
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="o-container">
       <div class="c-hero-home__content">
-        <div class="c-hero-home__content-top">
-          <div class="c-hero-home__text">
-            <h1>
-              Hi! I'm Robbe A Booold Designer
-              <br>
-              And a Solid Web developer
-            </h1>
-          </div>
-        </div>
-        <div class="c-hero-home__content-middle">
-          <LogoBooold />
-        </div>
-        <div class="c-hero-home__content-bottom">
-          <div class="c-hero-home__playlist"></div>
-          <div class="c-hero-home__scrolldown">
-            (Scroll Down)
-          </div>
-          <div class="c-hero-home__text text-right">
-            <p>
-              Enjoy This Month's Playlist
-              <br>
-              While Browsing
-            </p>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
