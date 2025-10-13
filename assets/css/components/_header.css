@@ -6,3 +6,7 @@
 .c-header__body {
     @apply flex items-center justify-end;
 }
+
+.c-header__body-right {
+    @apply flex items-center;
+}
