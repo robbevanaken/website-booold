@@ -1,4 +1,5 @@
 <template>
+  <LoadingScreen></LoadingScreen>
   <SiteHeader></SiteHeader>
 
   <main>

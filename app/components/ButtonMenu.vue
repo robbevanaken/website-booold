@@ -14,8 +14,8 @@
 
 const props = defineProps({
     buttonText: {
-        type: String,
-        default: 'Menu'
+      type: String,
+      default: 'Menu'
     },
 });
 
@@ -42,6 +42,6 @@ function initButtonCharacterStagger() {
 }
 
 onMounted(() => {
-    initButtonCharacterStagger();
+  initButtonCharacterStagger();
 });
 </script>

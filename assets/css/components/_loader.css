@@ -1,0 +1,59 @@
+.c-loader {
+  @apply z-[100];
+  @apply text-white;
+  @apply w-full h-dvh;
+  @apply fixed;
+  @apply inset-x-0 top-0;
+}
+
+.c-loader__bg {
+  @apply bg-blue;
+  @apply w-full h-full;
+  @apply absolute;
+  @apply inset-0;
+}
+
+.c-loader__container {
+  @apply z-[2];
+  @apply flex flex-col;
+  @apply justify-center items-center;
+  @apply w-full h-full;
+  @apply relative;
+}
+
+.c-loader__bg-bar {
+  @apply z-[1];
+  @apply origin-left;
+  @apply bg-white;
+  @apply w-full h-1;
+  @apply absolute;
+  @apply left-0 right-0 bottom-0;
+  transform-style: preserve-3d;
+  transform: scale3d(0, 1, 1);
+}
+
+.c-loader__logo-wrap {
+  @apply flex;
+  @apply justify-center items-center;
+  @apply w-[50vw] lg:w-[25vw] h-auto;
+  @apply relative;
+}
+
+.c-loader__logo-item {
+  @apply w-full;
+  @apply absolute;
+}
+
+.c-loader__logo-item.is--base {
+  @apply opacity-20;
+}
+
+.c-loader__logo-item.is--top {
+  -webkit-clip-path: inset(0% 100% 0% 0%);
+  clip-path: inset(0% 100% 0% 0%);
+}
+
+.c-loader__logo-img {
+  @apply w-full;
+  @apply block;
+}
