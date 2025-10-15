@@ -8,5 +8,5 @@
 }
 
 .c-header__body-right {
-    @apply flex items-center;
+    @apply flex items-center gap-5 lg:gap-20;
 }
