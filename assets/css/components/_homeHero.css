@@ -51,3 +51,7 @@
 .c-hero-home__title {
     @apply text-xxl text-white font-medium;
 }
+
+.c-hero-home__title span {
+    @apply inline-block;
+}
