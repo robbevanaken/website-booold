@@ -21,7 +21,7 @@ export function initLogoRevealloader(){
 
     gsap.set(sortedFadeInElements, {
         opacity: 0,
-        y: 30
+        y: -50
     });
 
     const loadTimeline = gsap.timeline({ 
@@ -49,7 +49,7 @@ function animateFadeInElements(elements) {
         fadeInTimeline.to(element, {
             opacity: 1,
             y: 0,
-            duration: 0.5,
+            duration: 0.75,
             ease: "power2.out",
         }, index * 0.35); 
     });

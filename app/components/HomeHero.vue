@@ -3,7 +3,7 @@
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="o-container">
       <div class="c-hero-home__content">
-        <h1 data-fadein="2" class="c-hero-home__title">
+        <h1 data-fadein="2" data-fade-in-text class="c-hero-home__title">
           <span class="c-hero-home__title-line">Booold Design And</span>
           <br>
           <span class="c-hero-home__title-line">Solid Web development</span>
