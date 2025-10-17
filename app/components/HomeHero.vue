@@ -3,7 +3,7 @@
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="o-container">
       <div class="c-hero-home__content">
-        <h1 data-fadein="1" ref="heroTitle" class="c-hero-home__title">
+        <h1 data-fadein="2" class="c-hero-home__title">
           <span class="c-hero-home__title-line">Booold Design And</span>
           <br>
           <span class="c-hero-home__title-line">Solid Web development</span>
@@ -236,10 +236,10 @@ const config = {
   fluidDecay: 0.98,
   trailLength: 0.8,
   stopDecay: 0.85,
-  color1: "#1C1341",
-  color2: "#F7F3FA",
-  color3: "#FF006E",
-  color4: "#FB5607",
+  color1: "#FF006E", // Pink
+  color2: "#370617", // Brown
+  color3: "#FF006E", // Pink
+  color4: "#370617", // Brown
   colorIntensity: 1.0,
   softness: 1.0,
 }
