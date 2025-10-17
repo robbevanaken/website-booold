@@ -12,8 +12,6 @@
       :title="metaContent.textQuote.title"
       :text="metaContent.textQuote.text"
     ></TextQuote>
-
-    <ButtonDefault></ButtonDefault>
   </main>
   
   <SiteFooter></SiteFooter>

@@ -1,18 +1,19 @@
 <template>
     <div class="c-text-quote">
         <div class="o-container o-grid gap-y-10">
-            <div class="col-span-3 md:col-span-2 mt-5">
+            <div class="col-span-12 md:col-span-2 mt-5">
                 <Label 
                     :text="label"
                     :classes="labelClasses">
                 </Label>
             </div>
-            <div class="col-span-9 md:col-span-7 col-start-4 md:col-start-3">
+            <div class="col-span-12 md:col-span-10 md:col-start-3">
                 <div class="c-text-quote__text" data-highlight-text>
                     <p>
                         {{ text }}
                     </p>
                 </div>
+                <ButtonDefault></ButtonDefault>
             </div>
         </div>
     </div>

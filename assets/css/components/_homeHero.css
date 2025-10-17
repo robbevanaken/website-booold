@@ -25,7 +25,8 @@
 .c-hero-home__content {
     @apply relative;
     @apply min-h-screen;
-    @apply flex flex-col items-center justify-between;
+    @apply flex flex-col;
+    @apply py-[8rem] md:py-[12rem];
 }
 
 .c-hero-home__content-middle {
@@ -45,4 +46,8 @@
 .c-hero-home__content-bottom {
     @apply w-full flex items-end justify-between;
     @apply py-5;
+}
+
+.c-hero-home__title {
+    @apply text-xxl text-white font-medium;
 }

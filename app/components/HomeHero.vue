@@ -3,7 +3,11 @@
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="o-container">
       <div class="c-hero-home__content">
-
+        <h1 data-fadein="1" ref="heroTitle" class="c-hero-home__title">
+          <span class="c-hero-home__title-line">Booold Design And</span>
+          <br>
+          <span class="c-hero-home__title-line">Solid Web development</span>
+        </h1>
       </div>
     </div>
   </div>
@@ -14,6 +18,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import * as THREE from 'three'
 
 const gradientCanvas = ref(null)
+const heroTitle = ref(null)
 
 const shaders = {
   vertexShader: `
