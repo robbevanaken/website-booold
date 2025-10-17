@@ -19,21 +19,15 @@ export function initLogoRevealloader(){
         return parseInt(a.dataset.fadein) - parseInt(b.dataset.fadein);
     });
 
-    // Initially hide fade-in elements
     gsap.set(sortedFadeInElements, {
         opacity: 0,
-        y: 30 // Start position - you can adjust this
+        y: 30
     });
 
-    // Main c-loader timeline
     const loadTimeline = gsap.timeline({ 
         defaults: { 
             ease: "c-loader",
-            duration: 3
-        },
-        onComplete: () => {
-            // Animate fade-in elements after loader completes
-            animateFadeInElements(sortedFadeInElements);
+            duration: 4
         }
     })
     .set(wrap,{ display: "block" })
@@ -44,22 +38,19 @@ export function initLogoRevealloader(){
     .to(progressBar,{ scaleX: 0, transformOrigin: "right center", duration: 0.5},"<")
     .add("hideContent", "<")
     .to(bg, { opacity: 0, duration: 1 },"hideContent")
-    .set(wrap,{ display: "none" });
+    .set(wrap,{ display: "none" })
+    .call(animateFadeInElements, [sortedFadeInElements], "hideContent+=0.3");
 }
 
 function animateFadeInElements(elements) {
     if (elements.length === 0) return;
-
-    // Create a timeline for the fade-in animations
     const fadeInTimeline = gsap.timeline();
-
-    // Animate each element in sequence
     elements.forEach((element, index) => {
         fadeInTimeline.to(element, {
             opacity: 1,
             y: 0,
-            duration: 0.8,
+            duration: 0.5,
             ease: "power2.out",
-        }, index * 0.15); 
+        }, index * 0.35); 
     });
 }
