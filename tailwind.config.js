@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "bright-blue": '#3a86ff',
         blue: '#1C1341',
         white: '#F7F3FA',
         pink: '#FF006E',
