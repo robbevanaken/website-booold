@@ -30,11 +30,13 @@ export function initLogoRevealloader(){
         textSplits.push(split);
         gsap.set(split.chars, {
             opacity: 0,
+            y: -0.5,
         });
     });
 
     gsap.set(sortedFadeInElements, {
         opacity: 0,
+        y: -20,
     });
 
     const loadTimeline = gsap.timeline({ 
@@ -76,9 +78,9 @@ function animateTextElements(textSplits) {
         gsap.to(split.chars, {
             opacity: 1,
             y: 0,
-            duration: 0.6,
+            duration: 0.5,
             ease: "power2.out",
-            stagger: 0.01,
+            stagger: 0.03,
             delay: splitIndex * 0.2
         });
     });
