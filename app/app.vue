@@ -5,10 +5,10 @@
 </template>
 
 <script setup>
-  // import { onMounted } from 'vue'
-  // import { initLocomotiveScroll } from "../../assets/js/animations/locomotiveScroll.js";
+  import { onMounted } from 'vue'
+  import { initLenis } from "../../assets/js/animations/lenis.js";
 
-  // onMounted(async () => {
-  //   await initLocomotiveScroll()
-  // })
+  onMounted(() => {
+    initLenis()
+  });
 </script>
