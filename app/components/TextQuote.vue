@@ -1,6 +1,6 @@
 <template>
     <div class="c-text-quote">
-        <div class="o-container o-grid gap-y-10">
+        <div class="o-container o-grid">
             <div class="col-span-12 md:col-span-2 mt-5">
                 <Label 
                     :text="label"
