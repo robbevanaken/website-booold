@@ -66,7 +66,7 @@ function animateFadeInElements(elements) {
             opacity: 1,
             y: 0,
             duration: 0.75,
-            ease: "power2.out",
+            ease: "cubic-bezier(0.625, 0.05, 0, 1)",
         }, index * 0.2); 
     });
 }
@@ -79,7 +79,7 @@ function animateTextElements(textSplits) {
             opacity: 1,
             y: 0,
             duration: 0.5,
-            ease: "power2.out",
+            ease: "cubic-bezier(0.625, 0.05, 0, 1)",
             stagger: 0.03,
             delay: splitIndex * 0.2
         });
