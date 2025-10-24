@@ -1,0 +1,19 @@
+.c-scrolldown {
+    @apply w-full h-full;
+    @apply inline-flex items-end justify-end gap-6;
+}
+
+.c-scrolldown__text {
+    @apply text-white uppercase text-xs tracking-[0.8px];
+}
+
+.c-scrolldown__pill {
+    @apply inline-block relative;
+    @apply w-[0.5625rem] h-[3rem] rounded-full bg-white;
+}
+
+.c-scrolldown__pill-scroller {
+    @apply absolute bottom-[0.0625rem] left-[0.0625rem];
+    @apply bg-blue rounded-full;
+    @apply w-[0.4375rem] h-[1.375rem];
+}
