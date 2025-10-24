@@ -76,7 +76,7 @@
 
 /* Background */
 .btn-animate-chars__bg {
-    @apply bg-blue;
+    @apply bg-black;
     @apply rounded-full;
     @apply absolute inset-0;
   transition: inset 0.6s cubic-bezier(0.625, 0.05, 0, 1);

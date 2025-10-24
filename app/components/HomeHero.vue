@@ -10,7 +10,7 @@
         </h1>
       </div>
       <div class="o-container o-grid">
-        <a href="#" data-fadein="3" class="c-hero-home__playlist-media col-span-9 md:col-span-4 lg:col-span-3">
+        <a href="#" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-4 lg:col-span-3">
           <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWEycTFmMjI3MzlyaDJuaWpkcjFlODF5ZXYxbXQ2eWxhcG5mZnE3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/w7mLEAMcpjrpe/giphy.gif" alt="">
         </a>
         <div class="col-span-12 md:col-span-4 lg:col-span-3">
@@ -21,7 +21,7 @@
             </p>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-4 lg:col-span-2 lg:col-start-11">
+        <div data-fadein="5" class="col-span-12 md:col-span-4 lg:col-span-2 lg:col-start-11">
           <ScrollDown></ScrollDown>
         </div>
       </div>
@@ -252,10 +252,10 @@ const config = {
   fluidDecay: 0.98,
   trailLength: 0.8,
   stopDecay: 0.85,
-  color1: "#3a86ff", // Pink
-  color2: "#1C1341", // Brown
-  color3: "#3a86ff", // Pink
-  color4: "#1C1341", // Brown
+  color1: "#FF006E", // Pink
+  color2: "#370617", // Brown
+  color3: "#FF006E", // Pink
+  color4: "#370617", // Brown
   colorIntensity: 1.0,
   softness: 1.0,
 }
