@@ -25,8 +25,8 @@
 .c-hero-home__content {
     @apply relative;
     @apply min-h-screen;
-    @apply flex flex-col justify-between;
-    @apply pt-[8rem] pb-[4rem];
+    @apply flex flex-col gap-10 justify-between;
+    @apply pt-[8rem] md:pt-[10vw] pb-[4rem];
 }
 
 .c-hero-home__content-wrapper {

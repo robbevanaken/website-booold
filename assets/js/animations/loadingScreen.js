@@ -30,7 +30,7 @@ export function initLogoRevealloader(){
         textSplits.push(split);
         gsap.set(split.chars, {
             opacity: 0,
-            y: -0.5,
+            y: -0.05,
         });
     });
 

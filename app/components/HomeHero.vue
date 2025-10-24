@@ -10,10 +10,10 @@
         </h1>
       </div>
       <div class="o-container o-grid">
-        <div data-fadein="3" class="c-hero-home__playlist-media col-span-7 md:col-span-4 lg:col-span-3">
+        <a href="#" data-fadein="3" class="c-hero-home__playlist-media col-span-12 md:col-span-4 lg:col-span-3">
           <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWEycTFmMjI3MzlyaDJuaWpkcjFlODF5ZXYxbXQ2eWxhcG5mZnE3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/w7mLEAMcpjrpe/giphy.gif" alt="">
-        </div>
-        <div class="col-span-5 md:col-span-4 lg:col-span-3">
+        </a>
+        <div class="col-span-12 md:col-span-4 lg:col-span-3">
           <div>
             <p data-fade-in-text class="c-hero-home__playlist-text">
               <span data-fadein="4">Enjoy this months playlist</span>

@@ -4,9 +4,23 @@
 }
 
 .c-header__body {
-    @apply flex items-center justify-end;
+    @apply relative;
+    @apply flex items-center justify-between md:justify-end;
 }
 
 .c-header__body-right {
     @apply flex items-center gap-8 lg:gap-20;
+}
+
+.c-header__body-center {
+    @apply md:absolute md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2;
+}
+
+.c-header__body-logo {
+    @apply w-20 md:w-32;
+}
+
+.c-header__body-logo svg {
+    @apply w-full h-auto;
+    @apply mix-blend-difference;
 }
