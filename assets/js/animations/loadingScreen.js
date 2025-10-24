@@ -80,7 +80,7 @@ function animateTextElements(textSplits) {
             y: 0,
             duration: 0.5,
             ease: "cubic-bezier(0.625, 0.05, 0, 1)",
-            stagger: 0.03,
+            stagger: 0.0125,
             delay: splitIndex * 0.2
         });
     });

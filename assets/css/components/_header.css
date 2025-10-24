@@ -1,8 +1,6 @@
 .c-header {
     @apply fixed top-0 left-0 right-0 z-[99];
     @apply py-7;
-    @apply mix-blend-difference;
-    filter: grayscale(100%)
 }
 
 .c-header__body {
