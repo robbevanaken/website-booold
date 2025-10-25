@@ -11,7 +11,7 @@
     content: '';
     @apply w-auto h-auto;
     @apply rounded-full;
-    @apply absolute -left-2 -right-2 -top-5 -bottom-5 md:-left-6 md:-top-4 md:-bottom-4 md:-right-4;
+    @apply absolute -left-3 -right-3 -top-5 -bottom-5 md:-left-6 md:-top-4 md:-bottom-4 md:-right-4;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
