@@ -9,6 +9,7 @@
 
 .btn-menu::before {
     content: '';
+    @apply w-auto h-auto;
     @apply opacity-0;
     @apply bg-white rounded-full;
     @apply absolute -left-2 -right-2 -top-5 -bottom-5 md:-left-6 md:-top-4 md:-bottom-4 md:-right-4;

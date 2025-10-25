@@ -260,10 +260,10 @@ const config = {
   fluidDecay: 0.98,
   trailLength: 0.8,
   stopDecay: 0.85,
-  color1: "#370617", // Pink
-  color2: "#FF006E", // Brown
-  color3: "#370617", // Pink
-  color4: "#FF006E", // Brown
+  color1: "#FF006E", // Pink
+  color2: "#FE4A49", // Red
+  color3: "#1C1341", // Blue
+  color4: "#FF006E", // Pink
   colorIntensity: 1.0,
   softness: 1.0,
 }
