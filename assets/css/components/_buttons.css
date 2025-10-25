@@ -2,21 +2,26 @@
 .btn-menu {
     @apply inline-flex items-center gap-5;
     @apply relative;
-    @apply pr-8 md:pr-12;
+    @apply py-6 px-8 md:py-5 md:pl-6 md:pr-18;
     @apply cursor-pointer;
     @apply w-auto md:w-auto;
+    @apply rounded-full;
 }
 
-.btn-menu::before {
-    content: '';
-    @apply w-auto h-auto;
+/* Background element similar to ButtonDefault */
+.btn-menu__bg {
     @apply rounded-full;
-    @apply absolute -left-3 -right-3 -top-5 -bottom-5 md:-left-6 md:-top-4 md:-bottom-4 md:-right-4;
+    @apply absolute inset-0;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    transition: background 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+    transition: all 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.btn-menu:hover .btn-menu__bg,
+.btn-menu:focus .btn-menu__bg {
+    @apply inset-[0.125em];
 }
 
 .btn-menu__content {
@@ -41,7 +46,7 @@
 .btn-menu__icon {
     @apply relative z-10;
     @apply flex flex-col justify-center items-center gap-2;
-    @apply absolute right-0 top-1/2 -translate-y-1/2;
+    @apply absolute right-4 md:right-6 top-1/2 -translate-y-1/2;
     @apply w-8;
 }
 
@@ -49,6 +54,11 @@
     @apply w-8 h-[0.0625rem] bg-white;
     @apply rounded-full;
     transition: all 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.btn-menu:hover .btn-menu__bg,
+.btn-menu:focus .btn-menu__bg {
+    @apply bg-white;
 }
 
 .btn-menu:hover .btn-menu__content,
@@ -59,11 +69,6 @@
 .btn-menu:hover .btn-menu__icon span,
 .btn-menu:focus .btn-menu__icon span {
     @apply w-4 bg-black;
-}
-
-.btn-menu:hover::before,
-.btn-menu:focus::before {
-    @apply bg-white
 }
 
 /* Default button */

@@ -1,5 +1,6 @@
 <template>
     <button class="btn-menu" aria-label="{{ buttonText }}">
+        <div class="btn-menu__bg"></div>
         <span data-button-animate-chars="" class="btn-menu__content">
             {{ buttonText }}
         </span>

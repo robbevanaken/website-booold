@@ -43,6 +43,11 @@
     @apply bg-white;
 }
 
+.c-header--light .btn-menu:hover .btn-menu__bg,
+.c-header--light .btn-menu:focus .btn-menu__bg {
+    @apply bg-white;
+}
+
 .c-header--light .btn-menu:hover .btn-menu__content,
 .c-header--light .btn-menu:focus .btn-menu__content {
     @apply text-black;
@@ -50,12 +55,7 @@
 
 .c-header--light .btn-menu:hover .btn-menu__icon span,
 .c-header--light .btn-menu:focus .btn-menu__icon span {
-    @apply w-4 bg-black;
-}
-
-.c-header--light .btn-menu:hover::before,
-.c-header--light .btn-menu:focus::before {
-    @apply bg-white
+    @apply bg-black;
 }
 
 /* Dark */
@@ -71,6 +71,11 @@
     @apply bg-black;
 } 
 
+.c-header--dark .btn-menu:hover .btn-menu__bg,
+.c-header--dark .btn-menu:focus .btn-menu__bg {
+    @apply bg-black;
+}
+
 .c-header--dark .btn-menu:hover .btn-menu__content,
 .c-header--dark .btn-menu:focus .btn-menu__content {
     @apply text-white;
@@ -78,10 +83,5 @@
 
 .c-header--dark .btn-menu:hover .btn-menu__icon span,
 .c-header--dark .btn-menu:focus .btn-menu__icon span {
-    @apply w-4 bg-white;
-}
-
-.c-header--dark .btn-menu:hover::before,
-.c-header--dark .btn-menu:focus::before {
-    @apply bg-black
+    @apply bg-white;
 }
