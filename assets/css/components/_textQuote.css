@@ -3,5 +3,5 @@
 }
 
 .c-text-quote__text {
-    @apply inline-block text-xl text-black font-medium mt-4 mb-12;
+    @apply inline-block text-xl text-black font-medium leading-[150%] mt-4 mb-12;
 } 

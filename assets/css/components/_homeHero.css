@@ -44,7 +44,7 @@
 .c-hero-home__playlist-media {
     @apply inline-block;
     @apply aspect-video;
-    @apply overflow-hidden;
+    @apply rounded-md overflow-hidden;
 }
 
 .c-hero-home__playlist-media img {

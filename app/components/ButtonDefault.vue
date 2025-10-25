@@ -1,5 +1,5 @@
 <template>
-    <a href="{{ buttonUrl }}" aria-label="{{ buttonText }}" :class="'btn-animate-chars ' + theme">
+    <a :href="buttonUrl" :target="buttonTarget" :aria-label="buttonText" :class="'btn-animate-chars ' + theme">
         <div class="btn-animate-chars__bg"></div>
         <span data-button-animate-chars="" class="btn-animate-chars__text">{{ buttonText }}</span>
     </a>
@@ -16,6 +16,10 @@ const props = defineProps({
     buttonUrl: {
         type: String,
         default: '#'
+    },
+    buttonTarget: {
+        type: String,
+        default: '_self'
     },
     theme: {
         type: String,

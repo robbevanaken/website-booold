@@ -3,14 +3,19 @@
   <SiteHeader></SiteHeader>
 
   <main>
-    <HomeHero></HomeHero>
+    <HomeHero
+      v-if="metaContent?.homeHero"
+      :playlistUrl="metaContent.homeHero.playlistUrl"
+    ></HomeHero>
 
     <TextQuote
       v-if="metaContent?.textQuote"
       :label="metaContent.textQuote.label"
       :labelClasses="metaContent.textQuote.labelClasses"
-      :title="metaContent.textQuote.title"
       :text="metaContent.textQuote.text"
+      :buttonText="metaContent.textQuote.buttonText"
+      :buttonUrl="metaContent.textQuote.buttonUrl"
+      :buttonTarget="metaContent.textQuote.buttonTarget"
     ></TextQuote>
   </main>
   

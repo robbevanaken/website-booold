@@ -13,7 +13,11 @@
                         {{ text }}
                     </p>
                 </div>
-                <ButtonDefault></ButtonDefault>
+                <ButtonDefault
+                    :buttonText="buttonText"
+                    :buttonUrl="buttonUrl"
+                    :buttonTarget="buttonTarget"
+                ></ButtonDefault>
             </div>
         </div>
     </div>
@@ -35,7 +39,16 @@
         },
         text: {
             type: String,
-        }
+        },
+        buttonText: {
+            type: String,
+        },
+        buttonUrl: {
+            type: String,
+        },
+        buttonTarget: {
+            type: String,
+        },
     });
 
     onMounted(() => {
