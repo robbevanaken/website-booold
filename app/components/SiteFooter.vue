@@ -8,10 +8,10 @@
                 ></Label>
                 <ul class="c-footer__list">
                     <li class="c-footer__list-item">
-                        <a href="mailto:hello@boooldstudio.com" target="_blank" aria-label="Booold Email">hello@boooldstudio.com</a>
+                        <a href="mailto:hello@boooldstudio.com" target="_blank" aria-label="Booold Email"><span data-button-animate-chars="" >hello@boooldstudio.com</span></a>
                     </li>
                     <li class="c-footer__list-item">
-                        <a href="tel:+32 494 48 77 62" target="_blank" aria-label="Booold Tel">+32 494 48 77 62</a>
+                        <a href="tel:+32 494 48 77 62" target="_blank" aria-label="Booold Tel"><span data-button-animate-chars="" >+32 494 48 77 62</span></a>
                     </li>
                 </ul>
             </div>
@@ -22,19 +22,47 @@
                 ></Label>
                 <ul class="c-footer__list">
                     <li class="c-footer__list-item">
-                        <a href="https://www.linkedin.com/company/booold/" target="_blank" aria-label="Booold Instagram">Linkedin</a>
+                        <a href="https://www.linkedin.com/company/booold/" target="_blank" aria-label="Booold Instagram"><span data-button-animate-chars="" >Linkedin</span></a>
                     </li>
                     <li class="c-footer__list-item">
-                        <a href="instagram.com" target="_blank" aria-label="Booold Instagram">Instagram</a>
+                        <a href="instagram.com" target="_blank" aria-label="Booold Instagram"><span data-button-animate-chars="" >Instagram</span></a>
                     </li>
                     <li class="c-footer__list-item">
-                        <a href="https://open.spotify.com/playlist/65vC87oYNWfBAg7MIE1ZZt?si=934630d01d7f4dfc" target="_blank" aria-label="Booold Spotify">Spotify</a>
+                        <a href="https://open.spotify.com/playlist/65vC87oYNWfBAg7MIE1ZZt?si=934630d01d7f4dfc" target="_blank" aria-label="Booold Spotify"><span data-button-animate-chars="" >Spotify</span></a>
                     </li>
                     <li class="c-footer__list-item">
-                        <a href="whatsapp.com" target="_blank" aria-label="Booold Whatsapp">Whatsapp</a>
+                        <a href="whatsapp.com" target="_blank" aria-label="Booold Whatsapp"><span data-button-animate-chars="" >Whatsapp</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 </template>
+
+<script>
+function initButtonCharacterStagger() {
+  const offsetIncrement = 0.01; 
+  const buttons = document.querySelectorAll('[data-button-animate-chars]');
+
+  buttons.forEach(button => {
+    const text = button.textContent; 
+    button.innerHTML = ''; 
+
+    [...text].forEach((char, index) => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.transitionDelay = `${index * offsetIncrement}s`;
+
+      if (char === ' ') {
+        span.style.whiteSpace = 'pre'; 
+      }
+
+      button.appendChild(span);
+    });
+  });
+}
+
+onMounted(() => {
+  initButtonCharacterStagger();
+});
+</script>
