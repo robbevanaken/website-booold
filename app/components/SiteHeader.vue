@@ -1,5 +1,5 @@
 <template>
-  <header data-fadein="1" class="c-header">
+  <header data-fadein="1" class="c-header c-header--light">
     <div class="o-container">
       <div class="c-header__body">
         <div class="c-header__body-center">

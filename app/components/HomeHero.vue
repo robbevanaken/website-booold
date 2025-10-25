@@ -13,7 +13,7 @@
         <a :href="playlistUrl" target="_blank" rel="noopener" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-4 lg:col-span-3">
           <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWEycTFmMjI3MzlyaDJuaWpkcjFlODF5ZXYxbXQ2eWxhcG5mZnE3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/w7mLEAMcpjrpe/giphy.gif" alt="">
         </a>
-        <div class="col-span-12 md:col-span-4 lg:col-span-3">
+        <div class="col-span-10 md:col-span-4 lg:col-span-3">
           <div>
             <p data-fade-in-text class="c-hero-home__playlist-text">
               <span data-fadein="4">Enjoy this months playlist</span>
@@ -21,7 +21,7 @@
             </p>
           </div>
         </div>
-        <div data-fadein="5" class="col-span-12 md:col-span-4 lg:col-span-2 lg:col-start-11">
+        <div data-fadein="5" class="col-span-2 md:col-span-4 lg:col-span-2 lg:col-start-11">
           <ScrollDown></ScrollDown>
         </div>
       </div>

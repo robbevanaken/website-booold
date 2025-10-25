@@ -4,7 +4,7 @@
 }
 
 .c-scrolldown__text {
-    @apply text-white uppercase text-xs tracking-[0.8px];
+    @apply hidden md:inline-block text-white uppercase text-xs tracking-[0.8px];
 }
 
 .c-scrolldown__pill {

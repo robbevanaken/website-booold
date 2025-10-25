@@ -10,10 +10,13 @@
 .btn-menu::before {
     content: '';
     @apply w-auto h-auto;
-    @apply opacity-0;
-    @apply bg-white rounded-full;
+    @apply rounded-full;
     @apply absolute -left-2 -right-2 -top-5 -bottom-5 md:-left-6 md:-top-4 md:-bottom-4 md:-right-4;
-    transition: opacity 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    transition: background 0.6s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
 .btn-menu__content {
@@ -60,7 +63,7 @@
 
 .btn-menu:hover::before,
 .btn-menu:focus::before {
-    @apply opacity-100;
+    @apply bg-white
 }
 
 /* Default button */

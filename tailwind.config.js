@@ -28,7 +28,7 @@ module.exports = {
         "base": ["clamp(14px, 1.5vw, 20px)", 1.5],
         "lg": ["clamp(24px, 2.5vw, 32px)", 1.7],
         "xl": ["clamp(28px, 3vw, 56px)", 1.25],
-        "xxl": ["clamp(30px, 6vw, 94px)", 1.15],
+        "xxl": ["clamp(40px, 6vw, 94px)", 1.15],
         },
       spacing: {
         '18': '4.5rem', // 72px

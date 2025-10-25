@@ -1,6 +1,7 @@
 .c-header {
     @apply fixed top-0 left-0 right-0 z-[99];
     @apply py-7;
+    transition: all 0.3s ease;
 }
 
 .c-header__body {
@@ -22,4 +23,65 @@
 
 .c-header__body-logo svg {
     @apply w-full h-auto;
+}
+
+.c-header__body-logo path {
+    transition: fill 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+/* Theme variations */
+/* Light */
+.c-header--light .btn-menu__content {
+    @apply text-white;
+}
+
+.c-header--light path {
+    @apply fill-white;
+}
+
+.c-header--light .btn-menu__icon span {
+    @apply bg-white;
+}
+
+.c-header--light .btn-menu:hover .btn-menu__content,
+.c-header--light .btn-menu:focus .btn-menu__content {
+    @apply text-black;
+}
+
+.c-header--light .btn-menu:hover .btn-menu__icon span,
+.c-header--light .btn-menu:focus .btn-menu__icon span {
+    @apply w-4 bg-black;
+}
+
+.c-header--light .btn-menu:hover::before,
+.c-header--light .btn-menu:focus::before {
+    @apply bg-white
+}
+
+/* Dark */
+.c-header--dark .btn-menu__content {
+    @apply text-black;
+}
+
+.c-header--dark path {
+    @apply fill-black;
+}
+
+.c-header--dark .btn-menu__icon span {
+    @apply bg-black;
+} 
+
+.c-header--dark .btn-menu:hover .btn-menu__content,
+.c-header--dark .btn-menu:focus .btn-menu__content {
+    @apply text-white;
+}
+
+.c-header--dark .btn-menu:hover .btn-menu__icon span,
+.c-header--dark .btn-menu:focus .btn-menu__icon span {
+    @apply w-4 bg-white;
+}
+
+.c-header--dark .btn-menu:hover::before,
+.c-header--dark .btn-menu:focus::before {
+    @apply bg-black
 }

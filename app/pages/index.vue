@@ -1,22 +1,29 @@
 <template>
   <LoadingScreen></LoadingScreen>
-  <SiteHeader></SiteHeader>
+
+  <div>
+    <SiteHeader></SiteHeader>
+  </div>
 
   <main>
-    <HomeHero
-      v-if="metaContent?.homeHero"
-      :playlistUrl="metaContent.homeHero.playlistUrl"
-    ></HomeHero>
+    <div data-header-theme="light">
+      <HomeHero
+        v-if="metaContent?.homeHero"
+        :playlistUrl="metaContent.homeHero.playlistUrl"
+      ></HomeHero>
+    </div>
 
-    <TextQuote
-      v-if="metaContent?.textQuote"
-      :label="metaContent.textQuote.label"
-      :labelClasses="metaContent.textQuote.labelClasses"
-      :text="metaContent.textQuote.text"
-      :buttonText="metaContent.textQuote.buttonText"
-      :buttonUrl="metaContent.textQuote.buttonUrl"
-      :buttonTarget="metaContent.textQuote.buttonTarget"
-    ></TextQuote>
+    <div data-header-theme="dark">
+      <TextQuote
+        v-if="metaContent?.textQuote"
+        :label="metaContent.textQuote.label"
+        :labelClasses="metaContent.textQuote.labelClasses"
+        :text="metaContent.textQuote.text"
+        :buttonText="metaContent.textQuote.buttonText"
+        :buttonUrl="metaContent.textQuote.buttonUrl"
+        :buttonTarget="metaContent.textQuote.buttonTarget"
+      ></TextQuote>
+    </div>
   </main>
   
   <SiteFooter></SiteFooter>
