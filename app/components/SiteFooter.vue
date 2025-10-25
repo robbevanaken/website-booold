@@ -1,6 +1,6 @@
 <template>
-    <footer>
+    <footer class="c-footer">
 
-        
+
     </footer>
 </template>

@@ -9,6 +9,6 @@
   import { initLenis } from "../../assets/js/animations/lenis.js";
 
   onMounted(() => {
-    initLenis()
+    // initLenis()
   });
 </script>
