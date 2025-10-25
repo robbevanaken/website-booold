@@ -5,7 +5,7 @@
 
 .c-header__body {
     @apply relative;
-    @apply flex items-center justify-between md:justify-end;
+    @apply flex items-center justify-end;
 }
 
 .c-header__body-right {
@@ -13,11 +13,11 @@
 }
 
 .c-header__body-center {
-    @apply md:absolute md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2;
+    @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
 }
 
 .c-header__body-logo {
-    @apply w-16;
+    @apply w-14 md:w-16;
 }
 
 .c-header__body-logo svg {

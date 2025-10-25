@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="c-header__body-right">
-          <LightSwitch></LightSwitch>
+          <!-- <LightSwitch></LightSwitch> -->
           <ButtonMenu></ButtonMenu>
         </div>
       </div>

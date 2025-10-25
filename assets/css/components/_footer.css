@@ -3,5 +3,5 @@
     @apply min-h-screen;
     @apply flex flex-col gap-16 justify-between;
     @apply pt-[12rem] md:pt-[10vw] pb-[4rem];
-    @apply bg-brown;
+    @apply bg-black;
 }
