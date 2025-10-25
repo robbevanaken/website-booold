@@ -1,7 +1,15 @@
 .c-footer {
     @apply relative;
-    @apply min-h-screen;
     @apply flex flex-col gap-16 justify-between;
-    @apply pt-[12rem] md:pt-[10vw] pb-[4rem];
+    @apply pb-[12rem] md:pb-[10vw] pt-[4rem];
     @apply bg-black;
+}
+
+.c-footer__list {
+    @apply mt-4 md:pt-8;
+    @apply flex flex-col;
+}
+
+.c-footer__list-item * {
+    @apply text-lg text-white;
 }

@@ -3,7 +3,7 @@
         <div class="c-case-panel__header">
             <div class="c-case-panel__labels">
                 <Label v-for="label in labels"
-                :text="label"
+                    :text="label"
                     classes="c-label--borderless">
                 ></Label>
             </div>
