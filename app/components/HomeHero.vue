@@ -281,6 +281,7 @@ let frameCount = 0
 let animationId = null
 let mouseX = 0, mouseY = 0, prevMouseX = 0, prevMouseY = 0, lastMoveTime = 0
 let idleAnimation = { x: 0, y: 0, time: 0 }
+let resizeTimeout = null
 
 onMounted(() => {
   if (!gradientCanvas.value) return
@@ -360,7 +361,8 @@ onMounted(() => {
 
   document.addEventListener("mousemove", handleMouseMove)
   document.addEventListener("mouseleave", handleMouseLeave)
-  window.addEventListener("resize", handleResize)
+  window.addEventListener("resize", debouncedResize)
+  window.addEventListener("orientationchange", handleOrientationChange)
 
   animate()
 })
@@ -372,7 +374,12 @@ onBeforeUnmount(() => {
   
   document.removeEventListener("mousemove", handleMouseMove)
   document.removeEventListener("mouseleave", handleMouseLeave)
-  window.removeEventListener("resize", handleResize)
+  window.removeEventListener("resize", debouncedResize)
+  window.removeEventListener("orientationchange", handleOrientationChange)
+  
+  if (resizeTimeout) {
+    clearTimeout(resizeTimeout)
+  }
 
   if (renderer) {
     renderer.dispose()
@@ -402,17 +409,76 @@ function handleMouseLeave() {
   fluidMaterial.uniforms.iMouse.value.set(0, 0, 0, 0)
 }
 
+function debouncedResize() {
+  if (resizeTimeout) {
+    clearTimeout(resizeTimeout)
+  }
+  
+  resizeTimeout = setTimeout(() => {
+    handleResize()
+  }, 150)
+}
+
+function handleOrientationChange() {
+  // Handle orientation changes separately with a longer delay
+  setTimeout(() => {
+    handleResize()
+  }, 500)
+}
+
 function handleResize() {
   const width = window.innerWidth
   const height = window.innerHeight
 
-  renderer.setSize(width, height)
-  fluidMaterial.uniforms.iResolution.value.set(width, height)
-  displayMaterial.uniforms.iResolution.value.set(width, height)
+  try {
+    // Update renderer size
+    renderer.setSize(width, height)
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    
+    // Update camera aspect if needed (though orthographic doesn't need it)
+    camera.updateProjectionMatrix()
+    
+    // Update shader uniforms
+    fluidMaterial.uniforms.iResolution.value.set(width, height)
+    displayMaterial.uniforms.iResolution.value.set(width, height)
 
-  fluidTarget1.setSize(width, height)
-  fluidTarget2.setSize(width, height)
-  frameCount = 0
+    // Dispose old render targets to free memory
+    fluidTarget1.dispose()
+    fluidTarget2.dispose()
+    
+    // Create new render targets with correct size
+    fluidTarget1 = new THREE.WebGLRenderTarget(width, height, {
+      minFilter: THREE.LinearFilter,
+      magFilter: THREE.LinearFilter,
+      format: THREE.RGBAFormat,
+      type: THREE.FloatType,
+    })
+    
+    fluidTarget2 = new THREE.WebGLRenderTarget(width, height, {
+      minFilter: THREE.LinearFilter,
+      magFilter: THREE.LinearFilter,
+      format: THREE.RGBAFormat,
+      type: THREE.FloatType,
+    })
+    
+    // Reset targets
+    currentFluidTarget = fluidTarget1
+    previousFluidTarget = fluidTarget2
+    
+    // Reset frame count to reinitialize fluid
+    frameCount = 0
+    
+    // Clear any existing textures
+    fluidMaterial.uniforms.iPreviousFrame.value = null
+    displayMaterial.uniforms.iFluid.value = null
+    
+  } catch (error) {
+    console.warn('Canvas resize failed, reloading page:', error)
+    // Fallback: reload the page after a short delay
+    setTimeout(() => {
+      window.location.reload()
+    }, 100)
+  }
 }
 
 function animate() {

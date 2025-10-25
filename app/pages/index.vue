@@ -25,8 +25,9 @@
       ></TextQuote>
     </div>
   </main>
-  
-  <SiteFooter></SiteFooter>
+  <div data-header-theme="light">
+    <SiteFooter></SiteFooter>
+  </div>
 </template>
 
 <script setup>
