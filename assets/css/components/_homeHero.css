@@ -42,18 +42,34 @@
 }
 
 .c-hero-home__playlist-media {
-    @apply inline-flex;
-    @apply aspect-[3/1];
+    @apply inline-grid;
+    @apply grid-cols-3 gap-2;
     @apply rounded-md overflow-hidden;
     @apply bg-black/35;
-    @apply p-4;
+    @apply p-2;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.6s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
 .c-hero-home__playlist-image {
-    @apply aspect-square rounded-sm overflow-hidden;
+    @apply aspect-square rounded-full overflow-hidden;
+    animation: vinyl-spin 8s linear infinite;
+    animation-play-state: running;
+}
+
+.c-hero-home__playlist-image:not(.is-playing) {
+    animation-play-state: paused;
+}
+
+/* Vinyl record spinning animation */
+@keyframes vinyl-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .c-hero-home__playlist-image picture {
@@ -70,4 +86,54 @@
 
 .c-hero-home__playlist-label--light {
     @apply text-white/60 text-sm;
+}
+
+.c-hero-home__playlist-buttons {
+    @apply w-full h-full;
+    @apply inline-flex gap-2;
+}
+
+.c-hero-home__playlist-button {
+    @apply w-full h-full rounded-full;
+    @apply inline-flex justify-center items-center;
+    @apply aspect-square;
+    @apply bg-white/25;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.c-hero-home__playlist-button path {
+    @apply fill-white stroke-none;
+    transition: fill 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.c-hero-home__playlist-button:hover,
+.c-hero-home__playlist-button:focus {
+    @apply bg-white;
+}
+
+.c-hero-home__playlist-button:hover path,
+.c-hero-home__playlist-button:focus path {
+    @apply fill-black/60;
+}
+
+.c-hero-home__playlist-button:disabled {
+    @apply bg-white/10;
+    @apply opacity-80;
+    cursor: not-allowed;
+}
+
+.c-hero-home__playlist-button:disabled path {
+    @apply fill-white/50;
+}
+
+.c-hero-home__playlist-button:disabled:hover,
+.c-hero-home__playlist-button:disabled:focus {
+    @apply bg-white/10;
+}
+
+.c-hero-home__playlist-button:disabled:hover path,
+.c-hero-home__playlist-button:disabled:focus path {
+    @apply fill-white/50;
 }

@@ -10,13 +10,34 @@
         </h1>
       </div>
       <div class="o-container o-grid">
-        <a :href="playlistUrl" target="_blank" rel="noopener" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-4 lg:col-span-3">
-          <div class="c-hero-home__playlist-image">
+        <div target="_blank" rel="noopener" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-4 lg:col-span-3">
+          <div class="c-hero-home__playlist-image" :class="{ 'is-playing': isPlaying }">
             <picture>
-              <img :src="spotifyPlaylistImg" alt="">
+              <img :src="spotifyPlaylistImg" alt="Playlist banner">
             </picture>
           </div>
-        </a>
+          <div class="c-hero-home__playlist-buttons">
+            <button 
+              class="c-hero-home__playlist-button c-hero-home__playlist-button--pause"
+              :disabled="!isPlaying"
+              @click="pauseVinyl"
+            >
+              <svg width="25%" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 5.5H6.5V18.5H9.5V5.5Z" stroke="black" stroke-miterlimit="10"></path>
+                <path d="M17.5 5.5H14.5V18.5H17.5V5.5Z" stroke="black" stroke-miterlimit="10"></path>
+              </svg>
+            </button>
+            <button 
+              class="c-hero-home__playlist-button c-hero-home__playlist-button--play"
+              :disabled="isPlaying"
+              @click="playVinyl"
+            >
+              <svg width="25%" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.20001 12V3L13 7.5L20.8 12L13 16.5L5.20001 21V12Z" stroke="black" stroke-miterlimit="10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="col-span-10 md:col-span-4 lg:col-span-3">
           <div>
             <p data-fade-in-text class="c-hero-home__playlist-text">
@@ -48,6 +69,7 @@ const props = defineProps({
 
 const gradientCanvas = ref(null)
 const heroTitle = ref(null)
+const isPlaying = ref(true) // Start with vinyl playing by default
 
 const shaders = {
   vertexShader: `
@@ -532,5 +554,14 @@ function animate() {
   previousFluidTarget = temp
 
   frameCount++
+}
+
+// Vinyl control functions
+function playVinyl() {
+  isPlaying.value = true
+}
+
+function pauseVinyl() {
+  isPlaying.value = false
 }
 </script>

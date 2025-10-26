@@ -7,3 +7,12 @@
 	64%  { transform: translateY(0); height: 1.375rem;}
 	100% { transform: translateY(0); height: 1.375rem;}
 }
+
+@keyframes vinyl-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
