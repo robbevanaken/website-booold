@@ -5,9 +5,13 @@
     @apply bg-black;
 }
 
+.c-footer .c-label{
+    @apply mx-auto md:mx-0;
+}
+
 .c-footer__list {
     @apply mt-4 md:pt-8;
-    @apply flex flex-col;
+    @apply flex flex-col items-center md:items-start;
 }
 
 .c-footer__list-item * {
@@ -35,7 +39,7 @@
 }
 
 .c-footer__list--sm {
-  @apply flex items-center gap-5;
+  @apply flex items-center justify-center md:justify-start gap-5;
 }
 
 .c-footer__list--sm a {

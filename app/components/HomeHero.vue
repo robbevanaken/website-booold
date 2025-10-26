@@ -11,13 +11,17 @@
       </div>
       <div class="o-container o-grid">
         <a :href="playlistUrl" target="_blank" rel="noopener" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-4 lg:col-span-3">
-          <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWEycTFmMjI3MzlyaDJuaWpkcjFlODF5ZXYxbXQ2eWxhcG5mZnE3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/w7mLEAMcpjrpe/giphy.gif" alt="">
+          <div class="c-hero-home__playlist-image">
+            <picture>
+              <img :src="spotifyPlaylistImg" alt="">
+            </picture>
+          </div>
         </a>
         <div class="col-span-10 md:col-span-4 lg:col-span-3">
           <div>
             <p data-fade-in-text class="c-hero-home__playlist-text">
-              <span data-fadein="4">Enjoy this months playlist</span>
-              <span data-fadein="5">(October — 2025)</span>
+              <span class="c-hero-home__playlist-label" data-fadein="4">Enjoy this months playlist</span>
+              <span class="c-hero-home__playlist-label--light" data-fadein="5">(October — 2025)</span>
             </p>
           </div>
         </div>
@@ -31,6 +35,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import spotifyPlaylistImg from "../../assets/images/spotify-playlist.png";
 import * as THREE from 'three'
 
 const props = defineProps({
