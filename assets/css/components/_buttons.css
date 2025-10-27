@@ -8,6 +8,22 @@
     @apply rounded-full;
 }
 
+.btn-menu[aria-expanded="true"] .btn-menu__icon {
+    @apply gap-0;
+}
+
+.btn-menu[aria-expanded="true"] .btn-menu__icon span:first-child {
+    @apply w-4;
+    @apply rotate-45;
+}
+
+.btn-menu[aria-expanded="true"] .btn-menu__icon span:last-child {
+    @apply w-4;
+    @apply -mt-[0.0625rem];
+    @apply -rotate-45;
+}
+
+
 /* Background element similar to ButtonDefault */
 .btn-menu__bg {
     @apply rounded-full;
@@ -47,6 +63,7 @@
     @apply relative z-10;
     @apply flex flex-col justify-center items-center gap-2;
     @apply absolute right-4 md:right-6 top-1/2 -translate-y-1/2;
+    transition: all 0.6s cubic-bezier(0.625, 0.05, 0, 1);
     @apply w-8;
 }
 
