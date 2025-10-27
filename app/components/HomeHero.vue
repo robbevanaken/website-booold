@@ -69,7 +69,7 @@ const props = defineProps({
 
 const gradientCanvas = ref(null)
 const heroTitle = ref(null)
-const isPlaying = ref(true) // Start with vinyl playing by default
+const isPlaying = ref(false) // Start with vinyl playing by default
 
 const shaders = {
   vertexShader: `
