@@ -1,8 +1,8 @@
 <template>
-    <button class="btn-menu" :aria-expanded="isExpanded.toString()" :aria-label="buttonText">
+    <button class="btn-menu" :aria-expanded="isExpanded.toString()" aria-label="Menu">
         <div class="btn-menu__bg"></div>
         <span data-button-animate-chars="" class="btn-menu__content">
-            {{ buttonText }}
+            Menu
         </span>
         <div class="btn-menu__icon">
             <span></span>
@@ -12,13 +12,6 @@
 </template>
 
 <script setup>
-
-const props = defineProps({
-    buttonText: {
-      type: String,
-      default: 'Menu'
-    },
-});
 
 const isExpanded = ref(false);
 
