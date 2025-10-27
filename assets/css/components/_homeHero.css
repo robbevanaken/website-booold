@@ -53,9 +53,16 @@
 }
 
 .c-hero-home__playlist-image {
+    @apply relative;
     @apply aspect-square rounded-full overflow-hidden;
     animation: vinyl-spin 8s linear infinite;
     animation-play-state: running;
+}
+
+.c-hero-home__playlist-image::before {
+    content: '';
+    @apply w-2 h-2 md:w-4 md:h-4 rounded-full bg-black;
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 
 .c-hero-home__playlist-image:not(.is-playing) {
