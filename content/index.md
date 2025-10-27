@@ -13,7 +13,3 @@ textQuote:
   buttonUrl: https://www.linkedin.com/company/booold/
   buttonTarget: _blank
 ---
-
-# Welcome to My Portfolio
-
-**This is the home page content managed** through Nuxt Content.
