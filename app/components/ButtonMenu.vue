@@ -1,5 +1,5 @@
 <template>
-    <button class="btn-menu" aria-label="{{ buttonText }}">
+    <button class="btn-menu" aria-expanded="false" aria-label="{{ buttonText }}">
         <div class="btn-menu__bg"></div>
         <span data-button-animate-chars="" class="btn-menu__content">
             {{ buttonText }}
@@ -19,6 +19,8 @@ const props = defineProps({
       default: 'Menu'
     },
 });
+
+const isExpanded = ref(false);
 
 function initButtonCharacterStagger() {
   const offsetIncrement = 0.01; 
@@ -42,7 +44,16 @@ function initButtonCharacterStagger() {
   });
 }
 
+function initMenuToggle() {
+  const button = document.querySelector('.btn-menu');
+  button.addEventListener('click', function (e) {
+    isExpanded.value = !isExpanded.value;
+    button.setAttribute('aria-expanded', isExpanded.value.toString());
+  })
+}
+
 onMounted(() => {
   initButtonCharacterStagger();
+  initMenuToggle();
 });
 </script>
