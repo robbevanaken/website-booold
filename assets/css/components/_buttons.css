@@ -1,7 +1,11 @@
 /* Menu Button */
+.btn-menu__wrapper {
+    @apply relative;
+}
+
 .btn-menu {
     @apply inline-flex items-center justify-center;
-    @apply relative;
+    @apply relative z-[99];
     @apply cursor-pointer;
     @apply w-20 h-20;
     @apply rounded-full;
