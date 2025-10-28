@@ -5,7 +5,7 @@
 }
 
 .c-slideout[aria-hidden="true"] {
-    @apply h-20 bg-transparent;
+    @apply h-16 md:h-20 bg-transparent;
 }
 
 .c-slideout[aria-hidden="false"] {
