@@ -1,52 +1,26 @@
 <template>
-    <button class="btn-menu" :aria-expanded="isExpanded.toString()" aria-label="Menu">
-        <div class="btn-menu__bg"></div>
-        <span data-button-animate-chars="" class="btn-menu__content">
-            Menu
-        </span>
-        <div class="btn-menu__icon">
-            <span></span>
-            <span></span>
-        </div>
-    </button>
+  <button 
+    class="btn-menu" 
+    :aria-expanded="isExpanded" 
+    aria-label="Menu"
+    @click="toggleMenu"
+  >
+    <div class="btn-menu__bg"></div>
+    <div class="btn-menu__icon">
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+  <aside class="c-slideout" :aria-hidden="!isExpanded">
+  </aside>
 </template>
 
 <script setup>
-
 const isExpanded = ref(false);
+const buttonText = ref(null);
 
-function initButtonCharacterStagger() {
-  const offsetIncrement = 0.01; 
-  const buttons = document.querySelectorAll('[data-button-animate-chars]');
+const toggleMenu = () => {
+  isExpanded.value = !isExpanded.value;
+};
 
-  buttons.forEach(button => {
-    const text = button.textContent; 
-    button.innerHTML = ''; 
-
-    [...text].forEach((char, index) => {
-      const span = document.createElement('span');
-      span.textContent = char;
-      span.style.transitionDelay = `${index * offsetIncrement}s`;
-
-      if (char === ' ') {
-        span.style.whiteSpace = 'pre'; 
-      }
-
-      button.appendChild(span);
-    });
-  });
-}
-
-function initMenuToggle() {
-  const button = document.querySelector('.btn-menu');
-  button.addEventListener('click', function (e) {
-    isExpanded.value = !isExpanded.value;
-    button.setAttribute('aria-expanded', isExpanded.value.toString());
-  })
-}
-
-onMounted(() => {
-  initButtonCharacterStagger();
-  initMenuToggle();
-});
 </script>
