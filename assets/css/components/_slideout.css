@@ -1,6 +1,6 @@
 .c-slideout {
     @apply absolute top-0 left-0 right-0 rounded-full z-[98];
-    @apply w-20 h-20;
+    @apply w-16 h-16 md:w-20 md:h-20;
     transition: all 0.6s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
