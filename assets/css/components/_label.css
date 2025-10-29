@@ -3,16 +3,16 @@
 }
 
 .c-label__text {
-    @apply font-aspekta text-xs text-blue font-medium tracking-[0.8px];
+    @apply font-aspekta text-xs text-black font-bold tracking-[0.8px];
     @apply uppercase;
 }
 
 /* Theme dark */
 .c-label--dark .c-label__text {
-    @apply text-blue;
+    @apply text-black font-bold;
 }
 
 /* Theme light */
 .c-label--light .c-label__text {
-    @apply text-white;
+    @apply text-white font-medium;
 }
