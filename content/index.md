@@ -14,13 +14,13 @@ textQuote:
   buttonTarget: _blank
 services:
   - title: Strategy
-    description: null
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
   - title: Design
-    description: null
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
   - title: Development
-    description: null
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
   - title: Aftercare
-    description: null
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
 ---
 
 #

@@ -1,1 +1,27 @@
-.c-service-cards {}
+.c-service-cards {
+    @apply pb-20 md:pb-[16vw];
+}
+
+.c-service-cards__card {
+    @apply flex flex-col justify-between h-full gap-14 md:gap-20;
+    @apply bg-black rounded-xl;
+    @apply py-10 px-6;
+}
+
+/* .c-service-cards__card-col:nth-of-type(odd){
+    @apply md:pb-8;
+}
+
+.c-service-cards__card-col:nth-of-type(even){
+    @apply md:mt-8;
+} */
+
+.c-service-cards__card-title {
+    @apply text-lg;
+    @apply text-white;
+    @apply mb-2;
+}
+
+.c-service-cards__card-text {
+    @apply text-white text-base;  
+}
