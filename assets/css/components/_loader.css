@@ -15,7 +15,7 @@
 
 .c-loader__container {
   @apply z-[2];
-  @apply flex flex-col gap-24;
+  @apply flex flex-col gap-18 md:gap-24;
   @apply justify-center items-center;
   @apply w-full h-full;
   @apply relative;
@@ -23,7 +23,7 @@
 
 .c-loader__bg-bar-wrapper {
   @apply relative;
-  @apply w-[50vw] md:w-[20vw] h-[0.0625rem];
+  @apply w-[10rem] md:w-[16rem] h-[0.0625rem];
 }
 
 .c-loader__bg-bar {
@@ -58,8 +58,8 @@
 }
 
 .c-loader__logo-item.is--top {
-  -webkit-clip-path: inset(100% 0% 0% 0%);
-  clip-path: inset(100% 0% 0% 0%);
+  -webkit-clip-path: inset(0% 100% 0% 0%);
+  clip-path: inset(0% 100% 0% 0%);
 }
 
 .c-loader__logo-img {
