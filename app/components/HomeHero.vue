@@ -2,16 +2,17 @@
   <div class="c-hero-home">
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="c-hero-home__content">
+      <div></div>
       <div class="o-container o-grid gap-y-6">
         <Label 
           data-fadein="1"
-          text="Hi, we are Booold"
-          classes="c-label--light col-span-12"
+          text="Hi, we are Booold Studio"
+          classes="c-label--light col-span-12 mx-auto"
           ></Label>
         <h1 data-fade-in-text class="c-hero-home__title col-span-12">
-          <span data-fadein="1" class="c-hero-home__title-line">Booold Design And</span>
+          <span data-fadein="1" class="c-hero-home__title-line">We do Booold design &</span>
           <br>
-          <span data-fadein="2" class="c-hero-home__title-line">Solid Web development</span>
+          <span data-fadein="2" class="c-hero-home__title-line">Solid web development</span>
         </h1>
       </div>
       <div class="o-container o-grid">
