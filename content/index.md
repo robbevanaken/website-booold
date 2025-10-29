@@ -1,7 +1,7 @@
 ---
 title: Home
 homeHero:
-  playlistUrl: https://open.spotify.com/playlist/65vC87oYNWfBAg7MIE1ZZt?si=934630d01d7f4dfc
+  playlistId: 65vC87oYNWfBAg7MIE1ZZt
 textQuote:
   label: Hi there!
   labelClasses: c-label--dark

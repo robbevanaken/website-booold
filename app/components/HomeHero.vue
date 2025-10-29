@@ -26,7 +26,7 @@
             <button 
               class="c-hero-home__playlist-button c-hero-home__playlist-button--pause"
               :disabled="!isPlaying"
-              @click="pauseVinyl"
+              @click="pauseVinyl()"
             >
               <svg width="25%" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.5 5.5H6.5V18.5H9.5V5.5Z" stroke="black" stroke-miterlimit="10"></path>
@@ -36,7 +36,7 @@
             <button 
               class="c-hero-home__playlist-button c-hero-home__playlist-button--play"
               :disabled="isPlaying"
-              @click="playVinyl"
+              @click="playVinyl()"
             >
               <svg width="25%" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.20001 12V3L13 7.5L20.8 12L13 16.5L5.20001 21V12Z" stroke="black" stroke-miterlimit="10"></path>
@@ -64,18 +64,39 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import spotifyPlaylistImg from "../../assets/images/spotify-playlist.png";
 import * as THREE from 'three'
+import { useSpotify } from "../../composables/useSpotify"
 
 const props = defineProps({
-    playlistUrl: {
+    playlistId: {
         type: String,
-        default: '#'
+        default: ''
     },
 });
 
+// Spotify Code
+const { spotifyToken, login, initSpotifyPlayer, play, pause } = useSpotify()
+const isPlaying = ref(false)
 
+onMounted(() => {
+  initSpotifyPlayer()
+})
+
+function playVinyl() {
+  // if (!spotifyToken.value) {
+  //   login()
+  //   return
+  // }
+  // play('spotify:playlist:' + props.playlistId)
+  isPlaying.value = true
+}
+
+function pauseVinyl() {
+  // pause()
+  isPlaying.value = false
+}
+
+// Gradient Code
 const gradientCanvas = ref(null)
-const heroTitle = ref(null)
-const isPlaying = ref(false) // Start with vinyl playing by default
 
 const shaders = {
   vertexShader: `
@@ -560,14 +581,5 @@ function animate() {
   previousFluidTarget = temp
 
   frameCount++
-}
-
-// Vinyl control functions
-function playVinyl() {
-  isPlaying.value = true
-}
-
-function pauseVinyl() {
-  isPlaying.value = false
 }
 </script>

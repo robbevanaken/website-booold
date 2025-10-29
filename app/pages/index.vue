@@ -9,7 +9,7 @@
     <div data-header-theme="light">
       <HomeHero
         v-if="metaContent?.homeHero"
-        :playlistUrl="metaContent.homeHero.playlistUrl"
+        :playlistId="metaContent.homeHero.playlistId"
       ></HomeHero>
     </div>
 
