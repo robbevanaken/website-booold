@@ -15,7 +15,7 @@
 
 .c-loader__container {
   @apply z-[2];
-  @apply flex flex-col gap-20;
+  @apply flex flex-col gap-24;
   @apply justify-center items-center;
   @apply w-full h-full;
   @apply relative;
