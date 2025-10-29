@@ -9,5 +9,5 @@
 }
 
 .c-slideout[aria-hidden="false"] {
-    @apply h-[40rem] w-[10rem];
+    @apply h-[40rem];
 }
