@@ -12,7 +12,7 @@
                 >
                 <div class="c-service-cards__card">
                         <Label
-                            :text="index"
+                            :text="index + 1"
                             classes="c-label--light mb-4">
                         </Label>
                         <div>
