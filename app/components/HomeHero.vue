@@ -2,7 +2,12 @@
   <div class="c-hero-home">
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="c-hero-home__content">
-      <div class="o-container o-grid">
+      <div class="o-container o-grid gap-y-6">
+        <Label 
+          data-fadein="1"
+          text="Hi, we are Booold"
+          classes="c-label--light col-span-12"
+          ></Label>
         <h1 data-fade-in-text class="c-hero-home__title col-span-12">
           <span data-fadein="1" class="c-hero-home__title-line">Booold Design And</span>
           <br>

@@ -3,7 +3,7 @@
 }
 
 .c-label__text {
-    @apply font-aspekta text-xs text-blue font-bold tracking-[0.8px];
+    @apply font-aspekta text-xs text-blue font-medium tracking-[0.8px];
     @apply uppercase;
 }
 
