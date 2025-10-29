@@ -18,7 +18,8 @@ module.exports = {
         brown: '#370617',
         red: '#FE4A49',
         green: '#ccff33',
-        black: "#000000"
+        black: "#000000",
+        yellow: "#F7F7EF"
       },
       fontFamily: {
         'aspekta': ['Aspekta', 'sans-serif'],
