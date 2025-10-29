@@ -7,7 +7,7 @@
                     :classes="labelClasses">
                 </Label>
             </div>
-            <div class="col-span-12 md:col-span-10 md:col-start-3 lg:col-span-8">
+            <div class="col-span-12 md:col-span-10 md:col-start-3">
                 <div class="c-text-quote__text" data-highlight-text>
                     <p>
                         {{ text }}

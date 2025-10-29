@@ -26,7 +26,7 @@
                             <a href="https://www.linkedin.com/company/booold/" target="_blank" aria-label="Booold Instagram"><span data-button-animate-chars="" >Linkedin</span></a>
                         </li>
                         <li class="c-footer__list-item">
-                            <a href="instagram.com" target="_blank" aria-label="Booold Instagram"><span data-button-animate-chars="" >Instagram</span></a>
+                            <a href="https://www.instagram.com/boooldstudio/" target="_blank" aria-label="Booold Instagram"><span data-button-animate-chars="" >Instagram</span></a>
                         </li>
                         <li class="c-footer__list-item">
                             <a href="https://open.spotify.com/playlist/65vC87oYNWfBAg7MIE1ZZt?si=934630d01d7f4dfc" target="_blank" aria-label="Booold Spotify"><span data-button-animate-chars="" >Spotify</span></a>

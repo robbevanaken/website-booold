@@ -1,5 +1,5 @@
 <template>
-    <div class="c-service-cards">
+    <div class="c-service-cards" data-momentum-hover-init>
         <div class="o-container o-grid">
             <Label
                 text="Our services"
@@ -9,8 +9,10 @@
                 v-for="(service, index) in services" 
                 :key="service.id || index"
                 class="col-span-12 md:col-span-6 lg:col-span-3 c-service-cards__card-col"
+                data-momentum-hover-element=""
+                data-header-theme="light"
                 >
-                <div class="c-service-cards__card">
+                <div class="c-service-cards__card" data-momentum-hover-target="">
                         <Label
                             :text="index + 1"
                             classes="c-label--light mb-4">
@@ -28,11 +30,17 @@
 </template>
 
 <script setup>
+import { initCardHover } from "../../assets/js/animations/cardHover.js";
+
 const props = defineProps({
     services: {
         type: String,
         default: []
     },
+});
+
+onMounted(() => {
+    initCardHover();
 });
 </script>
 

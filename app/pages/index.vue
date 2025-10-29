@@ -25,12 +25,10 @@
       ></TextQuote>
     </div>
 
-    <div data-header-theme="dark">
-      <ServiceCards
-        v-if="metaContent?.services"
-        :services="metaContent.services"
-      ></ServiceCards>
-    </div>
+    <ServiceCards
+      v-if="metaContent?.services"
+      :services="metaContent.services"
+    ></ServiceCards>
   </main>
   <div data-header-theme="light">
     <SiteFooter></SiteFooter>
