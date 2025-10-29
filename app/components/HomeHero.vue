@@ -2,11 +2,11 @@
   <div class="c-hero-home">
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="c-hero-home__content">
-      <div></div>
+      <div aria-hidden="true"></div>
       <div class="o-container o-grid gap-y-6">
         <Label 
           data-fadein="1"
-          text="Hi, we are Booold Studio"
+          text="Here's what you get"
           classes="c-label--light col-span-12 mx-auto"
           ></Label>
         <h1 data-fade-in-text class="c-hero-home__title col-span-12">
