@@ -15,21 +15,30 @@
 
 .c-loader__container {
   @apply z-[2];
-  @apply flex flex-col;
+  @apply flex flex-col gap-20;
   @apply justify-center items-center;
   @apply w-full h-full;
   @apply relative;
 }
 
+.c-loader__bg-bar-wrapper {
+  @apply relative;
+  @apply w-[50vw] md:w-[20vw] h-[0.0625rem];
+}
+
 .c-loader__bg-bar {
-  @apply z-[1];
+  @apply absolute inset-0;
+  @apply inline-block z-[2];
   @apply origin-left;
   @apply bg-white;
-  @apply w-full h-1;
-  @apply absolute;
-  @apply left-0 right-0 top-0;
+  @apply w-full h-full;
   transform-style: preserve-3d;
   transform: scale3d(0, 1, 1);
+}
+
+.c-loader__bg-bar-backdrop {
+  @apply absolute inset-0;
+  @apply bg-white/30;
 }
 
 .c-loader__logo-wrap {
