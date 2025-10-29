@@ -12,6 +12,15 @@ textQuote:
   buttonText: Let's connect!
   buttonUrl: https://www.linkedin.com/company/booold/
   buttonTarget: _blank
+services:
+  - title: Strategy
+    description: 
+  - title: Design
+    description: 
+  - title: Development
+    description:
+  - title: Aftercare
+    description: 
 ---
 
 #
