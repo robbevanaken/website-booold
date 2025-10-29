@@ -10,9 +10,9 @@
           classes="c-label--light col-span-12 mx-auto"
           ></Label>
         <h1 data-fade-in-text class="c-hero-home__title col-span-12">
-          <span data-fadein="1" class="c-hero-home__title-line">We do Booold design &</span>
+          <span data-fadein="1" class="c-hero-home__title-line">Booold design.</span>
           <br>
-          <span data-fadein="2" class="c-hero-home__title-line">Solid web development</span>
+          <span data-fadein="2" class="c-hero-home__title-line">Solid code.</span>
         </h1>
       </div>
       <div class="o-container o-grid">
