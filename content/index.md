@@ -14,13 +14,13 @@ textQuote:
   buttonTarget: _blank
 services:
   - title: Strategy
-    description: 
+    description: null
   - title: Design
-    description: 
+    description: null
   - title: Development
-    description:
+    description: null
   - title: Aftercare
-    description: 
+    description: null
 ---
 
 #
