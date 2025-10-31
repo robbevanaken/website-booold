@@ -1,13 +1,13 @@
 <template>
-    <div class="c-text-quote">
+    <div data-text-quote-parallax class="c-text-quote">
         <div class="o-container o-grid">
-            <div class="col-span-12 md:col-span-2 mt-5">
+            <div class="col-span-12 md:col-span-2 mt-5" data-text-quote-parallax-label>
                 <Label 
                     :text="label"
                     :classes="labelClasses">
                 </Label>
             </div>
-            <div class="col-span-12 md:col-span-10 md:col-start-3">
+            <div class="col-span-12 md:col-span-10 md:col-start-3" data-text-quote-parallax-content>
                 <div class="c-text-quote__text" data-highlight-text>
                     <p>
                         {{ text }}

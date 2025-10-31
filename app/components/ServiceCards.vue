@@ -1,16 +1,19 @@
 <template>
-    <div class="c-service-cards" data-momentum-hover-init>
+    <div data-service-cards-parallax class="c-service-cards" data-momentum-hover-init>
         <div class="o-container o-grid">
-            <Label
-                text="My services"
-                classes="c-label--dark mb-10 col-span-12 mx-auto">
-            </Label>
+            <div data-service-cards-parallax-label class="col-span-12">
+                <Label
+                    text="My services"
+                    classes="c-label--dark mb-10 mx-auto">
+                </Label>
+            </div>
             <div 
                 v-for="(service, index) in services" 
                 :key="service.id || index"
                 class="col-span-12 md:col-span-6 lg:col-span-3 c-service-cards__card-col"
                 data-momentum-hover-element=""
                 data-header-theme="light"
+                data-service-cards-parallax-card
                 >
                 <div class="c-service-cards__card" data-momentum-hover-target="">
                         <Label

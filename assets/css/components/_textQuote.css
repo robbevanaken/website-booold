@@ -1,5 +1,7 @@
 .c-text-quote {
     @apply py-20 md:py-[16vw];
+    @apply relative;
+    @apply overflow-hidden;
 }
 
 .c-text-quote__text {
