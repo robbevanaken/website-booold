@@ -2,7 +2,13 @@
     <footer class="c-footer">
         <div class="c-footer__top">
             <div class="o-container o-grid">
+                <div class="col-span-12">
+                    <div class="c-footer__border"></div>
+                </div>
                 <div class="col-span-12 md:col-span-6">
+
+                </div>
+                <div class="col-span-12 md:col-span-3">
                     <Label
                         text="Contact"
                         classes="c-label--light"
@@ -16,7 +22,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-span-12 md:col-span-6">
+                <div class="col-span-12 md:col-span-3">
                     <Label
                         text="Socials"
                         classes="c-label--light"

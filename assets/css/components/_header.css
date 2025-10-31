@@ -68,6 +68,8 @@
 /* Dark */
 .c-header--dark .btn-menu__content {
     @apply text-black;
+    @apply mix-blend-difference;
+
 }
 
 .c-header--dark path {
