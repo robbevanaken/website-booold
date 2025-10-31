@@ -26,3 +26,14 @@ body {
 *::selection {
     @apply bg-brown text-pink;
 }
+
+/* Theme variations */
+/* Light */
+body.c-body--light {
+    @apply bg-black;
+}
+
+/* Dark */
+body.c-body--dark {
+    @apply bg-light;
+}

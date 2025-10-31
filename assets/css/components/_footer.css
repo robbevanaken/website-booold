@@ -1,7 +1,12 @@
+.c-footer__wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
 .c-footer {
     @apply relative;
     @apply min-h-screen;
-    @apply flex flex-col gap-16 justify-end;
+    @apply flex flex-col gap-16 justify-between;
     @apply pb-[2rem] md:pb-[3rem] pt-[4rem];
     @apply bg-black;
 }
@@ -13,11 +18,6 @@
 .c-footer__logo path {
     @apply fill-white;
     @apply w-full;
-}
-
-.c-footer__border {
-    @apply border-t border-white/30;
-    @apply pt-8 md:pt-16;
 }
 
 .c-footer__list {
@@ -61,4 +61,12 @@
 .c-footer__list--sm a:hover,
 .c-footer__list--sm a:focus {
   @apply text-white;
+}
+
+.c-footer__wrap-dark {
+    @apply opacity-0;
+    @apply pointer-events-none;
+    @apply bg-black;
+    @apply w-full h-full;
+    @apply absolute top-0 left-0;
 }

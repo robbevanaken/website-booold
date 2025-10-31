@@ -3,19 +3,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function initHeaderScrollTrigger() {
+export function initThemeScrollTrigger() {
     const header = document.querySelector('.c-header');
+    const body = document.querySelector('body');
     
     if (!header) {
         console.warn('Header element not found');
         return;
     }
 
-    function changeHeaderTheme(theme) {
+    function changeTheme(theme) {
         header.classList.remove('c-header--light', 'c-header--dark');
         header.classList.add(`c-header--${theme}`);
+        body.classList.remove('c-body--light', 'c-body--dark');
+        body.classList.add(`c-body--${theme}`);
     }
-    changeHeaderTheme('light');
+    changeTheme('light');
     const sectionsWithTheme = document.querySelectorAll('[data-header-theme]');
     
     sectionsWithTheme.forEach((section) => {
@@ -25,22 +28,22 @@ export function initHeaderScrollTrigger() {
             trigger: section,
             start: "top 100px",
             end: "bottom 100px",
-            onEnter: () => changeHeaderTheme(theme),
-            onEnterBack: () => changeHeaderTheme(theme),
+            onEnter: () => changeTheme(theme),
+            onEnterBack: () => changeTheme(theme),
             onLeave: () => {
                 const nextSection = section.nextElementSibling;
                 if (nextSection && nextSection.hasAttribute('data-header-theme')) {
-                    changeHeaderTheme(nextSection.getAttribute('data-header-theme'));
+                    changeTheme(nextSection.getAttribute('data-header-theme'));
                 } else {
-                    changeHeaderTheme('light'); 
+                    changeTheme('light'); 
                 }
             },
             onLeaveBack: () => {
                 const prevSection = section.previousElementSibling;
                 if (prevSection && prevSection.hasAttribute('data-header-theme')) {
-                    changeHeaderTheme(prevSection.getAttribute('data-header-theme'));
+                    changeTheme(prevSection.getAttribute('data-header-theme'));
                 } else {
-                    changeHeaderTheme('light');
+                    changeTheme('light');
                 }
             }
         });
