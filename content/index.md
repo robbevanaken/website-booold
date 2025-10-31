@@ -13,14 +13,14 @@ textQuote:
   buttonUrl: https://www.linkedin.com/company/booold/
   buttonTarget: _blank
 services:
-  - title: Strategy
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
-  - title: Design
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
-  - title: Development
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
-  - title: Aftercare
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et risus in mauris aliquet egestas. Aliquam nec ligula non sapien finibus dignissim ac lacinia sapien.
+  - title: Strategy 💡
+    description: I start every project by taking a step back to see the full picture. What do you want to achieve with your website, and how? Together, we’ll create a clear sitemap and the first wireframes.
+  - title: Design 📐
+    description: In the design phase, we define the style and overall look and feel of your website. I always try to add that little extra touch to make your site stand out.
+  - title: Development 💻
+    description: Coding time! I focus on writing clean, scalable code that’s built to last and to grow along with your project.
+  - title: Aftercare 🛠️
+    description: After a successful launch, I’d love to stay in touch! This way, we can keep improving and evolving your website to keep it alive and up to date.
 ---
 
 #

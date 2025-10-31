@@ -38,7 +38,8 @@
 }
 
 .btn-menu:hover .btn-menu__bg,
-.btn-menu:focus .btn-menu__bg {
+.btn-menu:focus .btn-menu__bg,
+.btn-menu[aria-expanded="true"] .btn-menu__bg{
     @apply inset-[0.125em];
 }
 
@@ -57,13 +58,15 @@
 }
 
 .btn-menu:hover .btn-menu__bg,
-.btn-menu:focus .btn-menu__bg {
+.btn-menu:focus .btn-menu__bg,
+.btn-menu[aria-expanded="true"] .btn-menu__bg {
     @apply bg-white;
 }
 
 
 .btn-menu:hover .btn-menu__icon span,
-.btn-menu:focus .btn-menu__icon span {
+.btn-menu:focus .btn-menu__icon span 
+.btn-menu[aria-expanded="true"] .btn-menu__icon span {
     @apply w-4 bg-black;
 }
 

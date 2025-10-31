@@ -2,7 +2,7 @@
     <div class="c-service-cards" data-momentum-hover-init>
         <div class="o-container o-grid">
             <Label
-                text="Our services"
+                text="My services"
                 classes="c-label--dark mb-10 col-span-12 mx-auto">
             </Label>
             <div 

@@ -6,7 +6,7 @@
       <div class="o-container o-grid gap-y-6">
         <Label 
           data-fadein="1"
-          text="Hi, we are Booold"
+          text="Hi, I'm Robbe. I create 👇"
           classes="c-label--light col-span-12 mx-auto"
           ></Label>
         <h1 data-fade-in-text class="c-hero-home__title col-span-12">

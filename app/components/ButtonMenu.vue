@@ -2,6 +2,7 @@
   <div class="btn-menu__wrapper">
     <button 
       class="btn-menu" 
+      role="button"
       :aria-expanded="isExpanded" 
       aria-label="Menu"
       @click="toggleMenu"
