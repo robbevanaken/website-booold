@@ -16,7 +16,7 @@
         </h1>
       </div>
       <div class="o-container o-grid">
-        <div target="_blank" rel="noopener" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-4 lg:col-span-3">
+        <div target="_blank" rel="noopener" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-3 lg:col-span-2">
           <div class="c-hero-home__playlist-image" :class="{ 'is-playing': isPlaying }">
             <picture>
               <img :src="spotifyPlaylistImg" alt="Playlist banner">
@@ -33,15 +33,17 @@
                 <path d="M17.5 5.5H14.5V18.5H17.5V5.5Z" stroke="black" stroke-miterlimit="10"></path>
               </svg>
             </button>
-            <button 
+            <a 
+              :href="playlistUrl"
+              target="_blank"
               class="c-hero-home__playlist-button c-hero-home__playlist-button--play"
-              :disabled="isPlaying"
-              @click="playVinyl()"
+              :class="{ 'disabled': isPlaying }"
+              @click="!isPlaying && playVinyl($event)"
             >
               <svg width="25%" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.20001 12V3L13 7.5L20.8 12L13 16.5L5.20001 21V12Z" stroke="black" stroke-miterlimit="10"></path>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
         <div class="col-span-10 md:col-span-4 lg:col-span-3">
@@ -64,34 +66,22 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import spotifyPlaylistImg from "../../assets/images/spotify-playlist.png";
 import * as THREE from 'three'
-import { useSpotify } from "../../composables/useSpotify"
 
 const props = defineProps({
-    playlistId: {
-        type: String,
-        default: ''
-    },
+  playlistUrl: {
+    type: String,
+    default: ''
+  },
 });
 
-// Spotify Code
-const { spotifyToken, login, initSpotifyPlayer, play, pause } = useSpotify()
+// Vinyl animation state
 const isPlaying = ref(false)
 
-onMounted(() => {
-  initSpotifyPlayer()
-})
-
 function playVinyl() {
-  // if (!spotifyToken.value) {
-  //   login()
-  //   return
-  // }
-  // play('spotify:playlist:' + props.playlistId)
   isPlaying.value = true
 }
 
 function pauseVinyl() {
-  // pause()
   isPlaying.value = false
 }
 

@@ -29,7 +29,7 @@ body {
 
 /* Theme variations */
 /* Light */
-.c-body--light {
+body.c-body--light {
     @apply bg-brown;
 }
 

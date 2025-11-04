@@ -58,12 +58,6 @@
     animation-play-state: running;
 }
 
-.c-hero-home__playlist-image::before {
-    content: '';
-    @apply w-2 h-2 md:w-4 md:h-4 rounded-full bg-black;
-    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
-}
-
 .c-hero-home__playlist-image:not(.is-playing) {
     animation-play-state: paused;
 }
@@ -135,5 +129,26 @@
 
 .c-hero-home__playlist-button:disabled:hover path,
 .c-hero-home__playlist-button:disabled:focus path {
+    @apply fill-white/50;
+}
+
+.c-hero-home__playlist-button.disabled {
+    @apply bg-white/10;
+    @apply opacity-80;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.c-hero-home__playlist-button.disabled path {
+    @apply fill-white/50;
+}
+
+.c-hero-home__playlist-button.disabled:hover,
+.c-hero-home__playlist-button.disabled:focus {
+    @apply bg-white/10;
+}
+
+.c-hero-home__playlist-button.disabled:hover path,
+.c-hero-home__playlist-button.disabled:focus path {
     @apply fill-white/50;
 }
