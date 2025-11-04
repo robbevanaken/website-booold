@@ -1,5 +1,5 @@
 .c-service-cards {
-    @apply overflow-hidden;
+    @apply overflow-x-hidden;
     @apply pb-20 md:pb-[16vw];
     @apply relative;
 }

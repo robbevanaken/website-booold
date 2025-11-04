@@ -19,10 +19,10 @@ export function initThemeScrollTrigger() {
         body.classList.add(`c-body--${theme}`);
     }
     changeTheme('light');
-    const sectionsWithTheme = document.querySelectorAll('[data-header-theme]');
+    const sectionsWithTheme = document.querySelectorAll('[data-theme]');
     
     sectionsWithTheme.forEach((section) => {
-        const theme = section.getAttribute('data-header-theme');
+        const theme = section.getAttribute('data-theme');
         
         ScrollTrigger.create({
             trigger: section,
@@ -32,16 +32,16 @@ export function initThemeScrollTrigger() {
             onEnterBack: () => changeTheme(theme),
             onLeave: () => {
                 const nextSection = section.nextElementSibling;
-                if (nextSection && nextSection.hasAttribute('data-header-theme')) {
-                    changeTheme(nextSection.getAttribute('data-header-theme'));
+                if (nextSection && nextSection.hasAttribute('data-theme')) {
+                    changeTheme(nextSection.getAttribute('data-theme'));
                 } else {
                     changeTheme('light'); 
                 }
             },
             onLeaveBack: () => {
                 const prevSection = section.previousElementSibling;
-                if (prevSection && prevSection.hasAttribute('data-header-theme')) {
-                    changeTheme(prevSection.getAttribute('data-header-theme'));
+                if (prevSection && prevSection.hasAttribute('data-theme')) {
+                    changeTheme(prevSection.getAttribute('data-theme'));
                 } else {
                     changeTheme('light');
                 }

@@ -45,6 +45,9 @@
             <div class="c-footer__bottom">
                 <div class="o-container o-grid">
                     <div class="col-span-12">
+                        <LogoBooold classes="c-footer__logo"></LogoBooold>
+                    </div>
+                    <div class="col-span-12">
                         <ul class="c-footer__list--sm">
                             <li><span>© 2025 — Robbe Van Aken</span></li>
                             <li class="c-footer__list-item--sm">

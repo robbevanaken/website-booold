@@ -13,13 +13,17 @@ textQuote:
   buttonUrl: https://www.linkedin.com/company/booold/
   buttonTarget: _blank
 services:
-  - title: Strategy 💡
+  - title: Strategy
+    icon: 💡
     description: I start every project by taking a step back to see the full picture. What do you want to achieve with your website, and how? Together, we’ll create a clear sitemap and the first wireframes.
-  - title: Design 📐
+  - title: Design
+    icon: 📐
     description: In the design phase, we define the style and overall look and feel of your website. I always try to add that little extra touch to make your site stand out.
-  - title: Development 💻
+  - title: Development
+    icon: 💻
     description: Coding time! I focus on writing clean, scalable code that’s built to last and to grow along with your project.
-  - title: Aftercare 🛠️
+  - title: Aftercare
+    icon: 🛠️
     description: After a successful launch, I’d love to stay in touch! This way, we can keep improving and evolving your website to keep it alive and up to date.
 ---
 

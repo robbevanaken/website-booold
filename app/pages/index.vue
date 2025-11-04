@@ -6,14 +6,14 @@
   </div>
 
   <main>
-    <div data-header-theme="light">
+    <div data-theme="light">
       <HomeHero
         v-if="metaContent?.homeHero"
         :playlistId="metaContent.homeHero.playlistId"
       ></HomeHero>
     </div>
 
-    <div data-header-theme="dark">
+    <div data-theme="dark">
       <TextQuote
         v-if="metaContent?.textQuote"
         :label="metaContent.textQuote.label"
@@ -25,12 +25,14 @@
       ></TextQuote>
     </div>
 
-    <ServiceCards
-      v-if="metaContent?.services"
-      :services="metaContent.services"
-    ></ServiceCards>
+    <div data-theme="light">
+      <ServiceCards
+        v-if="metaContent?.services"
+        :services="metaContent.services"
+      ></ServiceCards>
+    </div>
   </main>
-  <div data-header-theme="light">
+  <div data-theme="light">
     <SiteFooter></SiteFooter>
   </div>
 </template>

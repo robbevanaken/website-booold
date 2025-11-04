@@ -18,7 +18,7 @@
 }
 
 .c-header__body-logo {
-    @apply w-14 md:w-16;
+    @apply w-24 md:w-40;
 }
 
 .c-header__body-logo svg {

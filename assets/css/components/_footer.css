@@ -7,12 +7,12 @@
     @apply relative;
     @apply min-h-screen;
     @apply flex flex-col gap-16 justify-between;
-    @apply pb-[2rem] md:pb-[3rem] pt-[4rem];
+    @apply pb-[2rem] md:pb-[3rem] pt-[8rem] md:pt-[12rem];
     @apply bg-black;
 }
 
 .c-footer__logo {
-    @apply w-full;
+    @apply w-full opacity-20;
 }
 
 .c-footer__logo path {

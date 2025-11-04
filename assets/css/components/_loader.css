@@ -44,7 +44,7 @@
 .c-loader__logo-wrap {
   @apply flex;
   @apply justify-center items-center;
-  @apply w-[6rem] lg:w-[8rem] h-auto;
+  @apply w-[10rem] lg:w-[12rem] h-auto;
   @apply relative;
 }
 
