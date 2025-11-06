@@ -2,10 +2,7 @@
     <div data-service-cards-parallax class="c-service-cards" data-momentum-hover-init>
         <div class="o-container o-grid">
             <div data-service-cards-parallax-label class="col-span-12">
-                <Label
-                    text="My services"
-                    classes="c-label--dark mb-10 mx-auto">
-                </Label>
+                <h2 class="c-service-cards__title">My services</h2>
             </div>
             <div 
                 v-for="(service, index) in services" 

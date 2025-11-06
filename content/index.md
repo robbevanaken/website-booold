@@ -4,11 +4,9 @@ homeHero:
   playlistUrl: https://open.spotify.com/playlist/65vC87oYNWfBAg7MIE1ZZt?si=8168697cd1024914
 textQuote:
   label: Hi there!
-  labelClasses: c-label--dark
-  text: What's up! I'm Robbe. A web designer and pixel precise developer. My job
-    is to tailor the web to your needs with my head and my heart. I combine
-    strategic thinking with creative passion to build digital experiences that
-    truly connect.
+  labelClasses: c-label--light
+  textTop: What's up! I'm Robbe. A web designer and pixel-precise developer. I tailor the web to your needs, using both my head and my heart.
+  textBottom: I combine strategic thinking with creative passion to craft digital experiences that truly connect. Together with my clients, I aim for a web presence that drives the brand forward and achieves real results. Whether that’s converting leads, selling products, or simply showing off your work.
   buttonText: Let's connect!
   buttonUrl: https://www.linkedin.com/company/booold/
   buttonTarget: _blank

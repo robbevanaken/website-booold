@@ -104,10 +104,10 @@
 
 /* Background */
 .btn-animate-chars__bg {
-    @apply bg-black;
+    @apply bg-white/15;
     @apply rounded-full;
     @apply absolute inset-0;
-  transition: inset 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+    transition: inset 0.6s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
 .btn-animate-chars:hover .btn-animate-chars__bg,

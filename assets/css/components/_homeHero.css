@@ -24,9 +24,17 @@
 
 .c-hero-home__content {
     @apply relative;
-    @apply min-h-screen;
-    @apply flex flex-col gap-16 items-center justify-between;
-    @apply py-[2rem] md:py-[4rem];
+    @apply min-h-[100vh];
+    @apply flex flex-col justify-end;
+    @apply pt-[6rem] pb-[0rem] md:pt-[8rem];
+}
+
+.c-hero-home__logo path {
+    @apply fill-white;
+}
+
+.c-hero-home__wrapper {
+    @apply flex flex-col;
 }
 
 .c-hero-home__content-wrapper {

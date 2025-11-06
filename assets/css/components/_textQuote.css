@@ -5,5 +5,13 @@
 }
 
 .c-text-quote__text {
-    @apply inline-block text-xl text-black font-medium leading-[150%] mt-4 mb-12;
+    @apply inline-block text-white font-medium leading-[150%] mt-4 mb-12;
 } 
+
+.c-text-quote__text-top {
+    @apply text-xl;
+}
+
+.c-text-quote__text-bottom {
+    @apply text-md mt-10;
+}

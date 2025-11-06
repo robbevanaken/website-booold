@@ -6,19 +6,20 @@
   </div>
 
   <main>
-    <div data-theme="light">
+    <div data-theme="hide">
       <HomeHero
         v-if="metaContent?.homeHero"
         :playlistUrl="metaContent.homeHero.playlistUrl"
       ></HomeHero>
     </div>
 
-    <div data-theme="dark">
+    <div data-theme="light">
       <TextQuote
         v-if="metaContent?.textQuote"
         :label="metaContent.textQuote.label"
         :labelClasses="metaContent.textQuote.labelClasses"
-        :text="metaContent.textQuote.text"
+        :textTop="metaContent.textQuote.textTop"
+        :textBottom="metaContent.textQuote.textBottom"
         :buttonText="metaContent.textQuote.buttonText"
         :buttonUrl="metaContent.textQuote.buttonUrl"
         :buttonTarget="metaContent.textQuote.buttonTarget"

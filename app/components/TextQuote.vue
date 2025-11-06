@@ -7,10 +7,13 @@
                     :classes="labelClasses">
                 </Label>
             </div>
-            <div class="col-span-12 md:col-span-8 md:col-start-5" data-text-quote-parallax-content>
+            <div class="col-span-12 md:col-span-7 md:col-start-6" data-text-quote-parallax-content>
                 <div class="c-text-quote__text" data-highlight-text>
-                    <p>
-                        {{ text }}
+                    <p class="c-text-quote__text-top">
+                        {{ textTop }}
+                    </p>
+                    <p class="c-text-quote__text-bottom">
+                        {{ textBottom }}
                     </p>
                 </div>
                 <ButtonDefault
@@ -37,7 +40,10 @@
         title: {
             type: String,
         },
-        text: {
+        textTop: {
+            type: String,
+        },
+        textBottom: {
             type: String,
         },
         buttonText: {

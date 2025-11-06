@@ -13,12 +13,12 @@ export function initThemeScrollTrigger() {
     }
 
     function changeTheme(theme) {
-        header.classList.remove('c-header--light', 'c-header--dark');
+        header.classList.remove('c-header--light', 'c-header--dark', 'c-header--hide');
         header.classList.add(`c-header--${theme}`);
-        body.classList.remove('c-body--light', 'c-body--dark');
+        body.classList.remove('c-body--light', 'c-body--dark', 'c-body--hide');
         body.classList.add(`c-body--${theme}`);
     }
-    changeTheme('light');
+    changeTheme('hide');
     const sectionsWithTheme = document.querySelectorAll('[data-theme]');
     
     sectionsWithTheme.forEach((section) => {
@@ -35,7 +35,7 @@ export function initThemeScrollTrigger() {
                 if (nextSection && nextSection.hasAttribute('data-theme')) {
                     changeTheme(nextSection.getAttribute('data-theme'));
                 } else {
-                    changeTheme('light'); 
+                    changeTheme('hide'); 
                 }
             },
             onLeaveBack: () => {
@@ -43,7 +43,7 @@ export function initThemeScrollTrigger() {
                 if (prevSection && prevSection.hasAttribute('data-theme')) {
                     changeTheme(prevSection.getAttribute('data-theme'));
                 } else {
-                    changeTheme('light');
+                    changeTheme('hide');
                 }
             }
         });

@@ -4,10 +4,20 @@
     @apply relative;
 }
 
+.c-service-cards__title {
+    @apply text-lg;
+    @apply text-white;
+    @apply font-semibold;
+    @apply mb-10 md:mb-14;
+    @apply text-center;
+}
+
 .c-service-cards__card {
     @apply flex flex-col justify-between h-full gap-14 md:gap-20;
-    @apply bg-black rounded-xl;
+    @apply bg-white/15 rounded-xl;
     @apply py-10 px-6;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .c-service-cards__card-title {

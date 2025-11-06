@@ -2,61 +2,8 @@
   <div class="c-hero-home">
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="c-hero-home__content">
-      <div aria-hidden="true"></div>
-      <div class="o-container o-grid gap-y-6">
-        <Label 
-          data-fadein="1"
-          text="Hi, I'm Robbe. I create 👇"
-          classes="c-label--light col-span-12 mx-auto"
-          ></Label>
-        <h1 data-fade-in-text class="c-hero-home__title col-span-12">
-          <span data-fadein="1" class="c-hero-home__title-line">Booold design.</span>
-          <br>
-          <span data-fadein="2" class="c-hero-home__title-line">Solid code.</span>
-        </h1>
-      </div>
-      <div class="o-container o-grid">
-        <div target="_blank" rel="noopener" data-fadein="3" class="c-hero-home__playlist-media col-span-8 md:col-span-3 lg:col-span-2">
-          <div class="c-hero-home__playlist-image" :class="{ 'is-playing': isPlaying }">
-            <picture>
-              <img :src="spotifyPlaylistImg" alt="Playlist banner">
-            </picture>
-          </div>
-          <div class="c-hero-home__playlist-buttons">
-            <button 
-              class="c-hero-home__playlist-button c-hero-home__playlist-button--pause"
-              :disabled="!isPlaying"
-              @click="pauseVinyl()"
-            >
-              <svg width="25%" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.5 5.5H6.5V18.5H9.5V5.5Z" stroke="black" stroke-miterlimit="10"></path>
-                <path d="M17.5 5.5H14.5V18.5H17.5V5.5Z" stroke="black" stroke-miterlimit="10"></path>
-              </svg>
-            </button>
-            <a 
-              :href="playlistUrl"
-              target="_blank"
-              class="c-hero-home__playlist-button c-hero-home__playlist-button--play"
-              :class="{ 'disabled': isPlaying }"
-              @click="!isPlaying && playVinyl($event)"
-            >
-              <svg width="25%" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.20001 12V3L13 7.5L20.8 12L13 16.5L5.20001 21V12Z" stroke="black" stroke-miterlimit="10"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="col-span-10 md:col-span-4 lg:col-span-3">
-          <div>
-            <p data-fade-in-text class="c-hero-home__playlist-text">
-              <span class="c-hero-home__playlist-label" data-fadein="4">Enjoy this months playlist</span>
-              <span class="c-hero-home__playlist-label--light" data-fadein="5">(October — 2025)</span>
-            </p>
-          </div>
-        </div>
-        <div data-fadein="5" class="col-span-2 md:col-span-4 lg:col-span-2 lg:col-start-11">
-          <ScrollDown></ScrollDown>
-        </div>
+      <div class="c-hero-home__wrapper">
+        <LogoBooold data-fadein="1" classes="c-hero-home__logo"></LogoBooold>
       </div>
     </div>
   </div>
@@ -304,10 +251,10 @@ const config = {
   fluidDecay: 0.98,
   trailLength: 0.8,
   stopDecay: 0.85,
-  color1: "#FF006E", // Pink
-  color2: "#FE4A49", // Red
-  color3: "#1C1341", // Blue
-  color4: "#FF006E", // Pink
+  color1: "#000000", // Pink
+  color2: "#FFFFFF", // Red
+  color3: "#000000", // Blue
+  color4: "#000000", // Pink
   colorIntensity: 1.0,
   softness: 1.0,
 }
