@@ -10,8 +10,8 @@ export function initHighlightText() {
     let splitHeadingTargets = document.querySelectorAll("[data-highlight-text]");
     splitHeadingTargets.forEach((heading) => {
         
-        const scrollStart = heading.getAttribute("data-highlight-scroll-start") || "top 90%";
-        const scrollEnd = heading.getAttribute("data-highlight-scroll-end") || "center 40%";
+        const scrollStart = heading.getAttribute("data-highlight-scroll-start") || "top 80%";
+        const scrollEnd = heading.getAttribute("data-highlight-scroll-end") || "center 30%";
         const fadedValue = heading.getAttribute("data-highlight-fade") || 0.2; // Opacity of letter
         const staggerValue = heading.getAttribute("data-highlight-stagger") || 0.1; // Smoother reveal
         
