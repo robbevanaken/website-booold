@@ -11,7 +11,7 @@
         <a class="c-header__nav-item" href=""><span data-button-animate-chars="" >Contact</span></a>
       </div>
       <div data-fadein="4" class="col-span-2">
-        <a class="c-header__nav-item" href=""><span data-button-animate-chars="" >Resume</span></a>
+        <a class="c-header__nav-item" href=""><span data-button-animate-chars="" >Resumé</span></a>
       </div>
     </div>
   </header>
