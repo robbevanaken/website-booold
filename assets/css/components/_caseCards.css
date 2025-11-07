@@ -1,0 +1,11 @@
+.c-case-cards {
+    @apply flex flex-col md:flex-row gap-0;
+    @apply pb-20 md:pb-[16vw];
+}
+
+.c-case-cards__thumbnail {
+    @apply relative inline-block;
+    @apply w-full aspect-square;
+    @apply overflow-hidden;
+    @apply border border-white/10 rounded-lg;
+}   

@@ -27,6 +27,13 @@
     </div>
 
     <div data-theme="light">
+      <CaseCards
+        v-if="metaContent?.cases"
+        :cases="metaContent.cases"
+      ></CaseCards>
+    </div>
+
+    <div data-theme="light">
       <ServiceCards
         v-if="metaContent?.services"
         :services="metaContent.services"

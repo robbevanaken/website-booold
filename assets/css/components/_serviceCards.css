@@ -1,5 +1,5 @@
 .c-service-cards {
-    @apply pb-32 md:pb-[26vw];
+    @apply pb-20 md:pb-[16vw];
     @apply relative;
 }
 

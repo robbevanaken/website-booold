@@ -10,6 +10,11 @@ textQuote:
   buttonText: Let's connect!
   buttonUrl: https://www.linkedin.com/company/booold/
   buttonTarget: _blank
+cases: 
+- title: NGIS
+  image: ""
+- title: De Wilde - Braems
+  image: ""
 services:
   - title: Strategy
     icon: 💡
