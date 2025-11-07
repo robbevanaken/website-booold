@@ -1,5 +1,5 @@
 <template>
-    <div class="c-case-cards">
+    <div class="c-case-cards" id="work">
         <div 
             v-for="(casePost, index) in cases" 
             :key="casePost.id || index"

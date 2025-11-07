@@ -16,6 +16,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     @apply bg-black;
     @apply overflow-x-hidden;
