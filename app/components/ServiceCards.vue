@@ -1,26 +1,33 @@
 <template>
     <div data-service-cards-parallax class="c-service-cards" data-momentum-hover-init>
         <div class="o-container o-grid">
-            <div data-service-cards-parallax-label class="col-span-12">
-                <h2 class="c-service-cards__title">My services</h2>
+            <div class="col-span-12 md:col-span-2" data-service-cards-parallax-label>
+                <Label 
+                    text="My services"
+                    classes="c-label--light">
+                </Label>
             </div>
-            <div 
-                v-for="(service, index) in services" 
-                :key="service.id || index"
-                class="col-span-12 md:col-span-6 lg:col-span-3 c-service-cards__card-col"
-                data-momentum-hover-element=""
-                data-header-theme="light"
-                data-service-cards-parallax-card
-                >
-                <div class="c-service-cards__card" data-momentum-hover-target="">
-                        <Label
-                            :text="index + 1"
-                            classes="c-label--light mb-4">
-                        </Label>
-                        <div>
-                            <h3 class="c-service-cards__card-title">{{ service.title }}</h3>
-                            <div class="c-service-cards__card-text">
-                            <p>{{ service.description }}</p>
+            <div class="col-span-12 md:col-span-7 md:col-start-6">
+                <div class="c-service-cards__grid">
+                    <div 
+                        v-for="(service, index) in services" 
+                        :key="service.id || index"
+                        class="c-service-cards__card-col"
+                        data-momentum-hover-element=""
+                        data-header-theme="light"
+                        data-service-cards-parallax-card
+                        >
+                        <div class="c-service-cards__card" data-momentum-hover-target="">
+                                <Label
+                                    :text="index + 1"
+                                    classes="c-label--light mb-4">
+                                </Label>
+                                <div>
+                                    <h3 class="c-service-cards__card-title">{{ service.title }}</h3>
+                                    <div class="c-service-cards__card-text">
+                                    <p>{{ service.description }}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -10,7 +10,7 @@
             <span class="c-case-panel__floormat-counter">{{ String(index + 1).padStart(2, '0') }} / {{ String(total).padStart(2, '0') }}</span>
         </div>
         <div v-if="imageUrl" class="c-case-panel__media">
-            <img :src="imageUrl"class="stacking-cards__item-img" alt="">
+            <img :src="imageUrl" class="c-case-panel__img" alt="">
         </div>
         <h1 class="c-case-panel__title">{{ title }}</h1>
     </div>
@@ -49,7 +49,5 @@ const props = defineProps({
     },
 });
 
-const colorClasses = ['is--green', 'is--purple', 'is--blue', 'is--brown', 'is--red'];
-const colorClass = computed(() => colorClasses[props.index % colorClasses.length]);
 
 </script>

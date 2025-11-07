@@ -16,3 +16,8 @@
 .c-label--light .c-label__text {
     @apply text-white font-medium;
 }
+
+/* Theme borderless */
+.c-label--borderless .c-label__text {
+    @apply border-none;
+}

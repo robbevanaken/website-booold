@@ -65,7 +65,7 @@
 
 
 .btn-menu:hover .btn-menu__icon span,
-.btn-menu:focus .btn-menu__icon span 
+.btn-menu:focus .btn-menu__icon span,
 .btn-menu[aria-expanded="true"] .btn-menu__icon span {
     @apply w-4 bg-black;
 }
@@ -79,6 +79,29 @@
     @apply flex grow justify-center items-center;
     @apply py-5 px-[1.625rem];
     @apply text-[0.75rem] leading-[1rem] font-medium;
+}
+
+/* Button theme variants */
+.btn-animate-chars--dark {
+    /* Default dark theme - inherits base styles */
+}
+
+.btn-animate-chars--light .btn-animate-chars__text {
+    @apply text-black;
+}
+
+.btn-animate-chars--light .btn-animate-chars__bg {
+    @apply bg-black/15;
+}
+
+.btn-animate-chars--light:hover .btn-animate-chars__bg,
+.btn-animate-chars--light:focus .btn-animate-chars__bg {
+    @apply bg-white;
+}
+
+.btn-animate-chars--light:hover .btn-animate-chars__text,
+.btn-animate-chars--light:focus .btn-animate-chars__text {
+    @apply text-black;
 }
 
 .btn-animate-chars__text {
