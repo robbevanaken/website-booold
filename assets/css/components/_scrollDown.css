@@ -1,5 +1,5 @@
 .c-scrolldown {
-    @apply w-full h-full mb-6 md:mb-10;
+    @apply w-full h-full;
     @apply inline-flex items-end justify-end gap-6;
 }
 

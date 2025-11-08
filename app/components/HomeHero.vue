@@ -3,8 +3,8 @@
     <div ref="gradientCanvas" class="c-gradient-canvas"></div>
     <div class="c-hero-home__content">
       <div class="c-hero-home__wrapper">
-        <div class="o-container">
-          <ScrollDown></ScrollDown>
+        <div class="o-container mb-6 md:mb-10">
+          <ScrollDown data-fadein="5"></ScrollDown>
         </div>
         <LogoBooold data-fadein="1" classes="c-hero-home__logo"></LogoBooold>
       </div>
