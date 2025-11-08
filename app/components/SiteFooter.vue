@@ -9,7 +9,7 @@
                     <div class="col-span-12 md:col-span-3">
                         <Label
                             text="Contact"
-                            classes="c-label--light"
+                            classes="c-label--dark"
                         ></Label>
                         <ul class="c-footer__list">
                             <li class="c-footer__list-item">
@@ -23,7 +23,7 @@
                     <div class="col-span-12 md:col-span-3">
                         <Label
                             text="Socials"
-                            classes="c-label--light"
+                            classes="c-label--dark"
                         ></Label>
                         <ul class="c-footer__list">
                             <li class="c-footer__list-item">

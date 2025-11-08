@@ -8,7 +8,7 @@
     @apply min-h-screen;
     @apply flex flex-col gap-16 justify-between;
     @apply pb-[2rem] md:pb-[3rem] pt-[8rem] md:pt-[12rem];
-    @apply bg-white/5;
+    @apply bg-white;
 }
 
 .c-footer__logo {
@@ -16,7 +16,7 @@
 }
 
 .c-footer__logo path {
-    @apply fill-white;
+    @apply fill-black;
     @apply w-full;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .c-footer__list-item * {
-    @apply text-md leading-[1.3] text-white;
+    @apply text-md leading-[1.3] text-black;
 }
 
 /* Character animation styles moved to _textAnimations.css */
@@ -36,13 +36,13 @@
 }
 
 .c-footer__list--sm * {
-    @apply text-white/50 text-xs;
+    @apply text-black/50 text-xs;
     transition: color 0.6s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
 .c-footer__list--sm a:hover,
 .c-footer__list--sm a:focus {
-  @apply text-white;
+  @apply text-black;
 }
 
 .c-footer__wrap-dark {

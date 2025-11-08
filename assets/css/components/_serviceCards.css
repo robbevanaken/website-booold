@@ -13,7 +13,7 @@
 
 .c-service-cards__card {
     @apply flex flex-col justify-between h-full gap-14 md:gap-20;
-    @apply bg-white/15 rounded-xl;
+    @apply bg-white/15 rounded-lg;
     @apply py-10 px-6;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

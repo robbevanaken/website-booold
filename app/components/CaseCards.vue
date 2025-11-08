@@ -1,6 +1,10 @@
 <template>
     <div class="c-case-cards" id="work">
         <div class="o-container o-grid">
+            <Label
+                text="Cases"
+                classes="c-label--light md:mb-10"
+            ></Label>
             <div 
                 v-for="(casePost, index) in cases" 
                 :key="casePost.id || index"
