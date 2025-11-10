@@ -51,10 +51,10 @@
                         <ul class="c-footer__list--sm">
                             <li><span>© 2025 — Robbe Van Aken</span></li>
                             <li class="c-footer__list-item--sm">
-                                <a href=""><span data-button-animate-chars="" >Terms & Conditions</span></a>
+                                <a href="/terms-and-conditions"><span data-button-animate-chars="" >Terms & Conditions</span></a>
                             </li>
                             <li class="c-footer__list-item--sm">
-                                <a href=""><span data-button-animate-chars="" >Privacy Policy</span></a>
+                                <a href="/privacy-policy"><span data-button-animate-chars="" >Privacy Policy</span></a>
                             </li>
                         </ul>
                     </div>

@@ -1,6 +1,6 @@
 .c-slideout {
     @apply fixed top-0 right-0 bottom-0 z-[98];
-    @apply h-screen w-auto;
+    @apply w-auto;
     @apply py-10 px-6 md:px-12 lg:px-20;
     @apply opacity-0 bg-black;
     transition: all 1.6s cubic-bezier(0.625, 0.05, 0, 1);
@@ -13,3 +13,9 @@
 .c-slideout[aria-hidden="false"] {
     @apply translate-x-[0] opacity-100;
 }
+
+.c-slideout nav {}
+
+.c-slideout ul {}
+
+.c-slideout__nav-item {}

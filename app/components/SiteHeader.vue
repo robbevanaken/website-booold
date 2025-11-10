@@ -2,7 +2,9 @@
   <header class="c-header c-header--light">
     <div class="o-container o-grid">
       <div class="c-header__body-logo col-span-6">
-        <LogoBooold classes="c-header__logo"></LogoBooold>
+        <a href="/" title="Booold Studio - Home">
+          <LogoBooold classes="c-header__logo"></LogoBooold>
+        </a>
       </div>
       <div data-fadein="2" class="col-span-2 hidden md:block">
         <a class="c-header__nav-item" href="#work"><span data-button-animate-chars="" >Work (2)</span></a>
