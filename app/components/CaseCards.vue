@@ -20,6 +20,14 @@
                     <div class="c-case-cards__thumbnail-background" data-pixelate-render="" data-pixelate-render-trigger="inview">
                         <img data-pixelate-render-img="" :src="casePost.image" :alt="casePost.title" />
                     </div>
+                    <div class="c-case-cards__thumbnail-overlay ">
+                        <div class="c-case-cards__thumbnail-overlay-inner">
+                            <button class="btn-animate-chars btn-animate-chars--light">
+                                <div class="btn-animate-chars__bg"></div>
+                                <span data-button-animate-chars="" class="btn-animate-chars__text">Visit website</span>
+                            </button>
+                        </div>
+                    </div>
                     <h2>{{ casePost.title }}</h2>
                 </a>
                 <div class="c-case-cards__thumbnail-credits">

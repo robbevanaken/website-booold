@@ -10,9 +10,9 @@
     @apply mb-2;
 }
 
-.c-case-cards__thumbnail::after {
-    content: "";
+.c-case-cards__thumbnail-overlay {
     @apply absolute inset-0;
+    @apply flex justify-center items-center;   
     @apply opacity-0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -33,7 +33,7 @@
     @apply transform scale-110;
 }
 
-.c-case-cards__thumbnail:hover::after {
+.c-case-cards__thumbnail:hover .c-case-cards__thumbnail-overlay {
     @apply opacity-100;
 }
 
