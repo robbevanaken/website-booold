@@ -1,5 +1,4 @@
 .c-case-cards {
-    @apply flex flex-col md:flex-row gap-0;
     @apply pb-20 md:pb-[16vw];
 }
 
@@ -7,5 +6,24 @@
     @apply relative inline-block;
     @apply w-full aspect-square;
     @apply overflow-hidden;
-    @apply border border-white/25 rounded-lg;
-}   
+    @apply border border-white/25;
+    @apply mb-6;
+}
+
+.c-case-cards__thumbnail::after {
+    content: "",
+}
+
+.c-case-cards__thumbnail-background {
+    @apply w-full h-full;
+    @apply overflow-hidden;
+}
+
+.c-case-cards__thumbnail img {
+    @apply w-full h-full object-cover;
+    transition: all 1.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.c-case-cards__thumbnail:hover img {
+    @apply transform scale-110;
+}

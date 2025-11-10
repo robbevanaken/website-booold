@@ -12,9 +12,11 @@ textQuote:
   buttonTarget: _blank
 cases: 
 - title: NGIS
-  image: ""
+  image: "/assets/images/mockup-ngis.webp"
+  url: "https://www.ngis-wireless.com/"
 - title: De Wilde - Braems
-  image: ""
+  image: "/assets/images/mockup-dwb.webp"
+  url: "https://dewilde-braems.be/"
 services:
   - title: Strategy
     icon: 💡
