@@ -3,21 +3,30 @@
         <div class="o-container">
             <Label
                 text="Cases"
-                classes="c-label--light md:mb-10"
+                classes="c-label--light mb-6 md:mb-10"
             ></Label>
         </div>
         <div class="o-container o-grid">
-            <a 
+            <div
                 v-for="(casePost, index) in cases" 
-                :key="casePost.id || index"
-                :class="'c-case-cards__thumbnail col-span-12 md:col-span-6 lg:col-span-5 ' + (index % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-8 md:mt-40 lg:mt-64')"
-                :href="casePost.url"
+                :class="'col-span-12 md:col-span-6 lg:col-span-5 ' + (index % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-8 md:mt-40 lg:mt-64')"
+                :key="casePost.id || index">
+                <a
+                    :href="casePost.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="c-case-cards__thumbnail"
                 >
-                <div class="c-case-cards__thumbnail-background" data-pixelate-render="" data-pixelate-render-trigger="inview">
-                    <img data-pixelate-render-img="" :src="casePost.image" :alt="casePost.title" />
+                    <div class="c-case-cards__thumbnail-background" data-pixelate-render="" data-pixelate-render-trigger="inview">
+                        <img data-pixelate-render-img="" :src="casePost.image" :alt="casePost.title" />
+                    </div>
+                    <h2>{{ casePost.title }}</h2>
+                </a>
+                <div class="c-case-cards__thumbnail-credits">
+                    <span>{{ casePost.title }}</span>
+                    <div>{{ casePost.year }}</div>
                 </div>
-                <h2>{{ casePost.title }}</h2>
-            </a>
+            </div>
         </div>
     </div>
 </template>

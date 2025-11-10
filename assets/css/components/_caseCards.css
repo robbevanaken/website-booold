@@ -7,11 +7,16 @@
     @apply w-full aspect-square;
     @apply overflow-hidden;
     @apply border border-white/25;
-    @apply mb-6;
+    @apply mb-2;
 }
 
 .c-case-cards__thumbnail::after {
-    content: "",
+    content: "";
+    @apply absolute inset-0;
+    @apply opacity-0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: opacity 1.6s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
 .c-case-cards__thumbnail-background {
@@ -21,9 +26,21 @@
 
 .c-case-cards__thumbnail img {
     @apply w-full h-full object-cover;
-    transition: all 1.6s cubic-bezier(0.625, 0.05, 0, 1);
+    transition: all 1.2s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
 .c-case-cards__thumbnail:hover img {
     @apply transform scale-110;
+}
+
+.c-case-cards__thumbnail:hover::after {
+    @apply opacity-100;
+}
+
+.c-case-cards__thumbnail-credits {
+    @apply flex justify-between items-center gap-2;
+}
+
+.c-case-cards__thumbnail-credits {
+    @apply text-white font-medium text-sm;
 }

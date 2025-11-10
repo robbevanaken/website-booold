@@ -14,9 +14,11 @@ cases:
 - title: NGIS
   image: "/assets/images/mockup-ngis.webp"
   url: "https://www.ngis-wireless.com/"
+  year: "2023"
 - title: De Wilde - Braems
   image: "/assets/images/mockup-dwb.webp"
   url: "https://dewilde-braems.be/"
+  year: "2024"
 services:
   - title: Strategy
     icon: 💡
