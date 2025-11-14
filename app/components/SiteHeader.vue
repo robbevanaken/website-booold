@@ -7,7 +7,7 @@
         </a>
       </div>
       <div data-fadein="2" class="col-span-2 hidden md:block">
-        <a class="c-header__nav-item" href="#work"><span data-button-animate-chars="" >Work (2)</span></a>
+        <a class="c-header__nav-item" data-scrollto="work" href="javascript:;"><span data-button-animate-chars="" >Work (2)</span></a>
       </div>
       <div data-fadein="3" class="col-span-2 hidden md:block">
         <a class="c-header__nav-item" href="mailto:hello@boooldstudio.com"><span data-button-animate-chars="" >Contact</span></a>
