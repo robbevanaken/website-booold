@@ -23,6 +23,7 @@
 }
 
 .c-slideout ul {
+    @apply list-none;
     @apply flex flex-col items-end justify-end w-full;
 }
 

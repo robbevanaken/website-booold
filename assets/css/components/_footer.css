@@ -11,6 +11,10 @@
     @apply bg-white;
 }
 
+.c-footer ul {
+    @apply list-none;
+}
+
 .c-footer__logo {
     @apply w-full opacity-20;
 }
