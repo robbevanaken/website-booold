@@ -25,5 +25,13 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+
+  app: {
+    pageTransition: { 
+      name: 'page', 
+      mode: 'out-in',
+      duration: 400
+    }
+  }
 })
