@@ -1,9 +1,13 @@
 .c-slideout {
-    @apply fixed top-0 right-0 bottom-0 z-[98];
+    @apply fixed top-0 right-0 z-[98];
     @apply w-auto;
-    @apply py-10 px-6 md:px-12 lg:px-20;
-    @apply opacity-0 bg-black;
+    @apply pt-32 pr-5;
+    @apply opacity-0;
     transition: all 1.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.c-slideout__wrapper {
+    @apply flex flex-col items-end justify-end w-full;   
 }
 
 .c-slideout[aria-hidden="true"] {
@@ -14,8 +18,44 @@
     @apply translate-x-[0] opacity-100;
 }
 
-.c-slideout nav {}
+.c-slideout nav {
+    @apply flex flex-col items-end justify-end w-full;
+}
 
-.c-slideout ul {}
+.c-slideout ul {
+    @apply flex flex-col items-end justify-end w-full;
+}
 
-.c-slideout__nav-item {}
+.c-slideout__nav-item {
+    @apply text-lg text-white;
+}
+
+.c-slideout li {
+    opacity: 0;
+    transform: translateX(2rem);
+    transition: all 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+
+.c-slideout[aria-hidden="false"] li:nth-child(1) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.2s;
+}
+
+.c-slideout[aria-hidden="false"] li:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.4s;
+}
+
+.c-slideout[aria-hidden="false"] li:nth-child(3) {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.6s;
+}
+
+.c-slideout[aria-hidden="true"] li {
+    opacity: 0;
+    transform: translateX(2rem);
+    transition-delay: 0s;
+}

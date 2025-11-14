@@ -15,9 +15,6 @@
                             <li class="c-footer__list-item">
                                 <a href="mailto:hello@boooldstudio.com" target="_blank" aria-label="Booold Email"><span data-button-animate-chars="" >hello@boooldstudio.com</span></a>
                             </li>
-                            <li class="c-footer__list-item">
-                                <a href="tel:+32 494 48 77 62" target="_blank" aria-label="Booold Tel"><span data-button-animate-chars="" >+32 494 48 77 62</span></a>
-                            </li>
                         </ul>
                     </div>
                     <div class="col-span-12 md:col-span-3">
@@ -36,7 +33,7 @@
                                 <a href="https://open.spotify.com/playlist/65vC87oYNWfBAg7MIE1ZZt?si=934630d01d7f4dfc" target="_blank" aria-label="Booold Spotify"><span data-button-animate-chars="" >Spotify</span></a>
                             </li>
                             <li class="c-footer__list-item">
-                                <a href="whatsapp.com" target="_blank" aria-label="Booold Whatsapp"><span data-button-animate-chars="" >Whatsapp</span></a>
+                                <a href="tel:+32494487762" target="_blank" aria-label="Booold Whatsapp"><span data-button-animate-chars="" >Whatsapp</span></a>
                             </li>
                         </ul>
                     </div>

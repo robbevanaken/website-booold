@@ -14,19 +14,25 @@
       </div>
     </button>
     <aside class="c-slideout" :aria-hidden="!isExpanded">
-      <nav>
-        <ul>
-          <li>
-            <a class="c-slideout__nav-item" href="#work"><span data-button-animate-chars="" >Work (2)</span></a>
-          </li>
-          <li>
-            <a class="c-slideout__nav-item" href="mailto:hello@boooldstudio.com"><span data-button-animate-chars="" >Contact</span></a>
-          </li>
-          <li>
-            <a class="c-slideout__nav-item" download href="/assets/images/Resumé.pdf"><span data-button-animate-chars="" >Resumé</span></a>
-          </li>
-        </ul>
-      </nav>
+      <div class="c-slideout__wrapper">
+        <Label
+            text="Menu"
+            classes="c-label--light"
+        ></Label>
+        <nav>
+          <ul>
+            <li>
+              <a class="c-slideout__nav-item" href="#work"><span data-button-animate-chars="" >Work (2)</span></a>
+            </li>
+            <li>
+              <a class="c-slideout__nav-item" href="mailto:hello@boooldstudio.com"><span data-button-animate-chars="" >Contact</span></a>
+            </li>
+            <li>
+              <a class="c-slideout__nav-item" download href="/assets/images/Resumé.pdf"><span data-button-animate-chars="" >Resumé</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </aside>
   </div>
 </template>

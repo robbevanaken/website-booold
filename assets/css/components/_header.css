@@ -82,13 +82,6 @@
     @apply bg-black;
 }
 
-.c-header--light .c-slideout {
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-}
-
 /* Dark */
 .c-header--dark .btn-menu__content {
     @apply text-black;
@@ -119,11 +112,4 @@
 .c-header--dark .btn-menu:focus .btn-menu__icon span,
 .c-header--dark .btn-menu[aria-expanded="true"] .btn-menu__icon span{
     @apply bg-white;
-}
-
-.c-header--dark .c-slideout {
-    background: rgba(57, 35, 35, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
