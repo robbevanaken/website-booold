@@ -30,8 +30,8 @@
 
           <h2>7. Contact</h2>
           <p>If you have questions about this Privacy Policy or want us to delete previous email correspondence, you can reach us at:</p>
-          <p><strong>Email:</strong> robbe@booold.studio</p>
-          <p><strong>Website:</strong> booold.studio</p>
+          <p><strong>Email:</strong> hello@boooldstudio.com</p>
+          <p><strong>Website:</strong> boooldstudio.com</p>
         </div>
       </main>
       <SiteFooter></SiteFooter>

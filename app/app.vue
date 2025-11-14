@@ -1,6 +1,9 @@
 <template>
   <div>
-    <NuxtPage />
+    <NuxtPage :transition="{
+      name: 'page',
+      mode: 'out-in'
+    }" />
   </div>
 </template>
 
@@ -12,7 +15,7 @@
   import { initSectionParallax } from "../../assets/js/animations/sectionParallax.js";
 
   onMounted(() => {
-    // initLenis()
+    initLenis()
     initThemeScrollTrigger();
     initFooterParallax();
     initSectionParallax();

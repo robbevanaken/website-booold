@@ -39,8 +39,8 @@
 
           <h2>7. Contact</h2>
           <p>For any questions regarding these terms and conditions, you can contact us at:</p>
-          <p><strong>Email:</strong> robbe@booold.studio</p>
-          <p><strong>Website:</strong> booold.studio</p>
+          <p><strong>Email:</strong> hello@boooldstudio.com</p>
+          <p><strong>Website:</strong> boooldstudio.com</p>
         </div>
       </main>
       <SiteFooter></SiteFooter>
