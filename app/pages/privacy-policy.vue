@@ -2,7 +2,7 @@
   <div data-theme="light">
     <div class="c-legal-page">
       <SiteHeader></SiteHeader>
-      <main class="c-legal-page__main o-container o-grid">
+      <main class="c-legal-page__main o-container o-grid c-legal-page__content">
         <div class="col-span-12 md:col-span-4">
           <h1>Privacy Policy</h1>
           <p>Last updated: 14 - 11 - 2025</p>
