@@ -15,7 +15,7 @@
   import { initSectionParallax } from "../../assets/js/animations/sectionParallax.js";
 
   onMounted(() => {
-    initLenis()
+    initLenis();
     initThemeScrollTrigger();
     initFooterParallax();
     initSectionParallax();

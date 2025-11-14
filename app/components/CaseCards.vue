@@ -22,10 +22,10 @@
                     </div>
                     <div class="c-case-cards__thumbnail-overlay ">
                         <div class="c-case-cards__thumbnail-overlay-inner">
-                            <button class="btn-animate-chars btn-animate-chars--light">
+                            <div class="btn-animate-chars btn-animate-chars--light">
                                 <div class="btn-animate-chars__bg"></div>
                                 <span data-button-animate-chars="" class="btn-animate-chars__text">Visit website</span>
-                            </button>
+                            </div>
                         </div>
                     </div>
                     <h2>{{ casePost.title }}</h2>
@@ -49,7 +49,9 @@ const props = defineProps({
 });
 
 import { onMounted } from 'vue';
+import { initCaseCardParallax } from "../../assets/js/animations/caseCardParallax.js";
 
 onMounted(() => {
+    initCaseCardParallax();
 });
 </script>

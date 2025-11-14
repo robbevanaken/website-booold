@@ -6,7 +6,6 @@
     @apply relative inline-block;
     @apply w-full aspect-square;
     @apply overflow-hidden;
-    @apply border border-white/25;
     @apply mb-2;
 }
 
@@ -16,7 +15,7 @@
     @apply opacity-0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    transition: opacity 1.6s cubic-bezier(0.625, 0.05, 0, 1);
+    transition: opacity 1s cubic-bezier(0.625, 0.05, 0, 1);
 }
 
 .c-case-cards__thumbnail-background {
@@ -25,12 +24,8 @@
 }
 
 .c-case-cards__thumbnail img {
-    @apply w-full h-full object-cover;
-    transition: all 1.2s cubic-bezier(0.625, 0.05, 0, 1);
-}
-
-.c-case-cards__thumbnail:hover img {
-    @apply transform scale-110;
+    @apply w-full h-[110%] object-cover;
+    will-change: transform;
 }
 
 .c-case-cards__thumbnail:hover .c-case-cards__thumbnail-overlay {
