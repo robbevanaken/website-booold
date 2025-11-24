@@ -13,7 +13,7 @@
         <a class="c-header__nav-item" href="mailto:hello@boooldstudio.com"><span data-button-animate-chars="" >Contact</span></a>
       </div>
       <div data-fadein="4" class="col-span-2 hidden md:block">
-        <a class="c-header__nav-item" download href="/assets/images/Resumé.pdf"><span data-button-animate-chars="" >Resumé</span></a>
+        <a class="c-header__nav-item" download href="/assets/images/Resume.pdf"><span data-button-animate-chars="" >Resumé</span></a>
       </div>
       <div class="col-span-6 flex justify-end md:hidden">
         <ButtonMenu></ButtonMenu>
