@@ -13,7 +13,7 @@ export function initHighlightText() {
         const scrollStart = heading.getAttribute("data-highlight-scroll-start") || "top 80%";
         const scrollEnd = heading.getAttribute("data-highlight-scroll-end") || "center 30%";
         const fadedValue = heading.getAttribute("data-highlight-fade") || 0.2; // Opacity of letter
-        const staggerValue = heading.getAttribute("data-highlight-stagger") || 0.1; // Smoother reveal
+        const staggerValue = heading.getAttribute("data-highlight-stagger") || 1; // Smoother reveal
         
         new SplitText(heading, {
         type: "words, chars",
